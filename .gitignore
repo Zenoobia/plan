@@ -55,10 +55,10 @@ autom4te.cache
 *.log.*
 *.sig
 
-/doc
-/examples
-/man
-/scripts
+#/doc
+#/examples
+#/man
+#/scripts
 /pkg
 .deps
 .libs
