@@ -10,15 +10,35 @@ AC_CONFIG_MACRO_DIRS([m4])
 AC_PROG_CXX
 AC_PROG_CC
 
+# Conditionals
+AC_ARG_ENABLE(debug,
+AS_HELP_STRING([--enable-debug], [enable debugging, default: no]),
+[case "${enableval}" in
+      yes) debug=true ;;
+      no)  debug=false ;;
+      *)   AC_MSG_ERROR([bad value ${enableval} for --enable-debug]) ;;
+esac],
+[debug=false])
+
+AM_CONDITIONAL(DEBUG, test x"$debug" = x"true")
+
 # Checks for libraries.
 LT_INIT
 AC_ENABLE_SHARED
 AC_DISABLE_STATIC
 AC_PROG_LIBTOOL(libtool)
 
+AC_CHECK_LIB(glfw, glfwInit, [], AC_MSG_ERROR([Could not find libglfw. Try $ ./configure LDFLAGS='-Lyour-glfw-lib-path']))
+AC_CHECK_LIB(GL, glPushMatrix, [], AC_MSG_ERROR([Could not find libGL. Try $ ./configure LDFLAGS='-Lyour-GL-lib-path']))
+
+# Checks for header files.
+AC_CHECK_HEADERS([fcntl.h limits.h stdint.h string.h sys/time.h termios.h unistd.h])
+AC_CHECK_HEADERS([argtable2.h], [], AC_MSG_ERROR([Could not find argtable2.h. Try $ ./configure CFLAGS='-Iyour-argtable2-include-path]))
+AC_CHECK_HEADERS([GLFW/glfw3.h], [], AC_MSG_ERROR([Could not find GLFW/glfw3.h. Try $ ./configure CFLAGS='-Iyour-GLFW-include-path]))
+
 # Finds Dependencies
-PKG_CHECK_MODULES([DEPS], [glib-2.0 >= 2.24.1] [opencv] [glew] [glfw3])
--lglfw3 -pthread -ldl -lGLU -lGL -lrt -lXrandr -lXxf86vm -lXi -lXinerama -lX11
+PKG_CHECK_MODULES([DEPS], [glib-2.0 >= 2.24.1] [opencv] [glew] [glfw3] [lept] [tesseract])
+#-lglfw3 -pthread -ldl -lGLU -lGL -lrt -lXrandr -lXxf86vm -lXi -lXinerama -lX11
 #PKG_CHECK_MODULES([DEPS], [opencv-3.4.1-2 >= 3])
 #PKG_CHECK_MODULES([DEPS], [glew-2.1.0])
 #PKG_CHECK_MODULES([DEPS], [glut-3.0.0])

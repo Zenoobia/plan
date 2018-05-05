@@ -10,6 +10,7 @@
 # http://www.gnu.org/software/autoconf
 
 Makefile.in
+/*/Makefile
 
 /Makefile
 /config.*
@@ -72,6 +73,7 @@ autom4te.cache
 /src/scripts
 /src/src
 /src/stamp-h1
+/src/include
 
 *.lo
 *.o

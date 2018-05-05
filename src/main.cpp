@@ -1,4 +1,9 @@
 #define GLEW_STATIC
+
+#include <imgui.h>
+#include <imgui_impl_glfw_gl3.h>
+#include <imguifilesystem.h>
+
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
@@ -116,6 +121,9 @@ int main(int argc, char* argv[])
 	// Register key callback
 	glfwSetKeyCallback(window, OpenGLKeyCallback);
 
+  // Initialize ImGui
+  ImGui_ImplGlfwGL3_Init(window, true);
+  ImGui::StyleColorsDark();
 
 	//if (Initialize())
 	//Initialize();
