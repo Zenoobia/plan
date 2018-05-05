@@ -1,19 +1,15 @@
-# This is an example PKGBUILD file. Use this as a start to creating your own,
-# and remove these comments. For more information, see 'man PKGBUILD'.
-# NOTE: Please fill out the license field for your package! If it is unknown,
-# then please put 'unknown'.
-
-# Maintainer: Your Name <youremail@domain.com>
-pkgname=helloWorld
+# Maintainer: Your Name <joaqimpla@gmail.com>
+pkgname=hello-world
+#pkgver=$(git describe --long --tags | sed 's/\([^-]*-g\)/r\1/;s/-/./g')
 pkgver=0.1
 pkgrel=1
 epoch=
-pkgdesc=""
+pkgdesc="TODO: Package Description"
 arch=("x86_64")
 url=""
 license=('GPL')
 groups=()
-depends=()
+depends=("opencv" "leptonica" "glfw" "glew" "freeglut" "glm")
 makedepends=()
 checkdepends=()
 optdepends=()
@@ -31,9 +27,7 @@ noextract=()
 md5sums=()
 validpgpkeys=()
 
-
 prepare() {
-#mkdir build
 	cd ..
 	./autogen.sh
 	#cd "$pkgname-$pkgver"
@@ -42,17 +36,14 @@ prepare() {
 
 
 build() {
-cd ..
-	./configure --prefix=/usr
+	../configure --prefix=/usr
 	make
 }
 
 check() {
-cd ..
 	make -k check
 }
 
 package() {
-cd ..
 	make DESTDIR="$pkgdir/" install
 }

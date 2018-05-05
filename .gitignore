@@ -9,6 +9,8 @@
 
 # http://www.gnu.org/software/autoconf
 
+Makefile.in
+
 /Makefile
 /config.*
 /autom4te.cache
@@ -55,12 +57,23 @@ autom4te.cache
 *.log.*
 *.sig
 
-#/doc
-#/examples
-#/man
-#/scripts
 /pkg
 .deps
 .libs
+/build
 
+/src/Makefile
+/src/config.*
+/src/doc
+/src/examples
+/src/helloWorld
+/src/libtool
+/src/man
+/src/scripts
+/src/src
+/src/stamp-h1
+
+*.lo
+*.o
+*.la
 
