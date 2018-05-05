@@ -1,10 +1,14 @@
+
 AUTOMAKE_OPTIONS = subdir-objects
 ACLOCAL_AMFLAGS = $(ACLOCAL_FLAGS)
 
-bin_PROGRAMS = helloWorld
-helloWorld_SOURCES = main.cpp
-helloWorld_LDADD = libHelloWorld.la
+bin_PROGRAMS = plan
+plan_SOURCES = main.cpp
+plan_LDADD = libPlan.la
 
-lib_LTLIBRARIES = libHelloWorld.la
-libHelloWorld_la_LDFLAGS = -version-info 0:0:0
-libHelloWorld_la_SOURCES = helloWorld.cpp helloWorld.h
+plan_CFLAGS = $(DEPS_CFLAGS)
+plan_LDADD += $(DEPS_LIBS)
+
+lib_LTLIBRARIES = libPlan.la
+libPlan_la_LDFLAGS = -version-info 0:0:0
+libPlan_la_SOURCES = plan.cpp plan.hpp

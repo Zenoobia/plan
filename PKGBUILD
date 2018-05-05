@@ -1,5 +1,5 @@
 # Maintainer: Your Name <joaqimpla@gmail.com>
-pkgname=hello-world
+pkgname=plan
 #pkgver=$(git describe --long --tags | sed 's/\([^-]*-g\)/r\1/;s/-/./g')
 pkgver=0.1
 pkgrel=1
