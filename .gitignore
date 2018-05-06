@@ -74,6 +74,7 @@ autom4te.cache
 /src/src
 /src/stamp-h1
 /src/include
+/src/third_party
 
 *.lo
 *.o

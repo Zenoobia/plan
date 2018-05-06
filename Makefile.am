@@ -1,14 +1,18 @@
-AUTOMAKE_OPTIONS = foreign
-ACLOCAL_AMFLAGS = -I m4 -I third_part/repos/imgui
-AM_CXXFLAGS = -std=c++17 -fpic -Wall -Wextra
+AUTOMAKE_OPTIONS = foreign subdir-objects
+ACLOCAL_AMFLAGS = -I m4
+AM_CXXFLAGS = -std=c++17 -fpic -Wall -Wextra -Werror -x c++ -isystem /usr/local/include -isystem /usr/include
 
 if DEBUG
-AM_CXXFLAGS +=-g3 -O0
+#AM_CXXFLAGS +=-g3 -O0
 else
-AM_CXXFLAGS += -O2
+#AM_CXXFLAGS += -O2
 endif
 
 
-SUBDIRS = src doc examples man scripts
 #third_party/repos/imgui
+#third_party/repos/imgui/examples/opengl3_example third_party/repos/imgui
+
+
+SUBDIRS = src doc examples man scripts
+#SUBDIRS += third_party/repos/imgui
 

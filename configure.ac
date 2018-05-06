@@ -2,7 +2,7 @@
 AC_PREREQ([2.69])
 AC_INIT([plan], [1.0], [joaqimpla@gmail.com])
 AM_INIT_AUTOMAKE
-AC_CONFIG_SRCDIR([src/main.cpp])
+AC_CONFIG_SRCDIR([src/main_new.cpp])
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_MACRO_DIRS([m4])
 
@@ -37,7 +37,7 @@ AC_CHECK_HEADERS([argtable2.h], [], AC_MSG_ERROR([Could not find argtable2.h. Tr
 AC_CHECK_HEADERS([GLFW/glfw3.h], [], AC_MSG_ERROR([Could not find GLFW/glfw3.h. Try $ ./configure CFLAGS='-Iyour-GLFW-include-path]))
 
 # Finds Dependencies
-PKG_CHECK_MODULES([DEPS], [glib-2.0 >= 2.24.1] [opencv] [glew] [glfw3] [lept] [tesseract])
+PKG_CHECK_MODULES([DEPS], [glib-2.0 >= 2.24.1] [opencv] [glew] [glfw3] [lept] [tesseract] [poppler-cpp])
 #-lglfw3 -pthread -ldl -lGLU -lGL -lrt -lXrandr -lXxf86vm -lXi -lXinerama -lX11
 #PKG_CHECK_MODULES([DEPS], [opencv-3.4.1-2 >= 3])
 #PKG_CHECK_MODULES([DEPS], [glew-2.1.0])
@@ -49,6 +49,7 @@ AC_C_INLINE
 AC_TYPE_SIZE_T
 
 # Output Makefile files.
-AC_CONFIG_FILES([Makefile src/Makefile doc/Makefile examples/Makefile man/Makefile scripts/Makefile])
+AC_CONFIG_FILES([Makefile src/Makefile doc/Makefile examples/Makefile man/Makefile scripts/Makefile ])
+# third_party/repos/imgui/Makefile \
 AC_OUTPUT
 

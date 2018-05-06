@@ -1,2 +1,2 @@
-man_MANS = helloWorld.1
+man_MANS = plan.1
 
