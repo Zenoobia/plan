@@ -1,0 +1,3286 @@
+%YAML:1.0
+---
+number_of_textlines: 308
+TextLines:
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.6757888793945312e+01
+                  rects: [ 124, 604, 11, 21 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.0579322814941406e+01
+                  rects: [ 126, 540, 12, 29 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.4800193786621094e+01
+                  rects: [ 126, 486, 12, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 97
+                  confidence: 9.3084465026855469e+01
+                  rects: [ 133, 328, 17, 26 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 97
+                  confidence: 9.3084465026855469e+01
+                  rects: [ 133, 328, 17, 26 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 83
+                  confidence: 9.7303405761718750e+01
+                  rects: [ 164, 496, 14, 21 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 83
+                  confidence: 9.7303405761718750e+01
+                  rects: [ 164, 496, 14, 21 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 71
+                  confidence: 9.2946716308593750e+01
+                  rects: [ 173, 151, 26, 75 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 61
+                  confidence: 9.5418914794921875e+01
+                  rects: [ 199, 151, 39, 75 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 83
+                  confidence: 9.6524932861328125e+01
+                  rects: [ 178, 335, 14, 22 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 83
+                  confidence: 9.6524932861328125e+01
+                  rects: [ 178, 335, 14, 22 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 91
+                  confidence: 9.6476806640625000e+01
+                  rects: [ 181, 491, 11, 26 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 91
+                  confidence: 9.6476806640625000e+01
+                  rects: [ 181, 491, 11, 26 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.5329704284667969e+01
+                  rects: [ 182, 433, 8, 30 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 50
+                  confidence: 9.8007164001464844e+01
+                  rects: [ 183, 549, 20, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 50
+                  confidence: 9.8007164001464844e+01
+                  rects: [ 183, 549, 20, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 105
+                  confidence: 9.4145683288574219e+01
+                  rects: [ 184, 653, 10, 26 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 105
+                  confidence: 9.5056022644042969e+01
+                  rects: [ 186, 603, 9, 22 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 102
+                  confidence: 9.9539245605468750e+01
+                  rects: [ 193, 432, 17, 30 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.6317131042480469e+01
+                  rects: [ 196, 336, 8, 21 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 38
+                  confidence: 9.4395637512207031e+01
+                  rects: [ 207, 335, 21, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.4504623413085938e+01
+                  rects: [ 214, 485, 9, 30 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 84
+                  confidence: 9.2925498962402344e+01
+                  rects: [ 216, 657, 6, 22 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 39
+                  confidence: 9.5469673156738281e+01
+                  rects: [ 222, 657, 8, 22 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 84
+                  confidence: 9.8368026733398438e+01
+                  rects: [ 220, 282, 13, 21 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 84
+                  confidence: 9.7012992858886719e+01
+                  rects: [ 220, 282, 13, 21 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 91
+                  confidence: 9.6837165832519531e+01
+                  rects: [ 221, 599, 10, 25 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 35
+                  confidence: 9.3463523864746094e+01
+                  rects: [ 224, 145, 17, 24 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 105
+                  confidence: 9.3979255676269531e+01
+                  rects: [ 226, 545, 9, 26 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 105
+                  confidence: 9.6264854431152344e+01
+                  rects: [ 227, 486, 7, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 52
+                  confidence: 9.8226005554199219e+01
+                  rects: [ 251, 650, 15, 26 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.6085746765136719e+01
+                  rects: [ 254, 278, 11, 25 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.3687919616699219e+01
+                  rects: [ 256, 385, 10, 25 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 116
+                  confidence: 9.5125480651855469e+01
+                  rects: [ 259, 491, 9, 26 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 105
+                  confidence: 9.5546264648437500e+01
+                  rects: [ 268, 389, 10, 21 ]
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 84
+                  confidence: 9.6163429260253906e+01
+                  rects: [ 295, 442, 14, 21 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 105
+                  confidence: 9.2898445129394531e+01
+                  rects: [ 296, 442, 13, 21 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.1172836303710938e+01
+                  rects: [ 309, 652, 10, 26 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 83
+                  confidence: 9.8273574829101562e+01
+                  rects: [ 311, 442, 14, 21 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 38
+                  confidence: 9.4317001342773438e+01
+                  rects: [ 374, 35, 54, 61 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 38
+                  confidence: 9.4317001342773438e+01
+                  rects: [ 374, 35, 54, 61 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 55
+                  confidence: 9.8130233764648438e+01
+                  rects: [ 376, 131, 23, 37 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 55
+                  confidence: 9.8130233764648438e+01
+                  rects: [ 376, 131, 23, 37 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 37
+                  confidence: 9.2134262084960938e+01
+                  rects: [ 378, 656, 14, 21 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 83
+                  confidence: 9.5756813049316406e+01
+                  rects: [ 386, 199, 16, 17 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 37
+                  confidence: 9.6617355346679688e+01
+                  rects: [ 386, 217, 16, 9 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 93
+                  confidence: 9.0701843261718750e+01
+                  rects: [ 395, 38, 15, 25 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 93
+                  confidence: 9.0701843261718750e+01
+                  rects: [ 395, 38, 15, 25 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 67
+                  confidence: 8.9791488647460938e+01
+                  rects: [ 396, 65, 17, 27 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 67
+                  confidence: 8.9791488647460938e+01
+                  rects: [ 396, 65, 17, 27 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 119
+                  confidence: 9.5758247375488281e+01
+                  rects: [ 403, 131, 22, 38 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 119
+                  confidence: 9.5758247375488281e+01
+                  rects: [ 403, 131, 22, 38 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.5484680175781250e+01
+                  rects: [ 417, 199, 17, 29 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 65
+                  confidence: 9.8566177368164062e+01
+                  rects: [ 429, 131, 25, 37 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 65
+                  confidence: 9.8566177368164062e+01
+                  rects: [ 429, 131, 25, 37 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 84
+                  confidence: 9.8158103942871094e+01
+                  rects: [ 434, 53, 34, 42 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 102
+                  confidence: 9.8060668945312500e+01
+                  rects: [ 515, 40, 25, 56 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 102
+                  confidence: 9.8060668945312500e+01
+                  rects: [ 515, 40, 25, 56 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.9541618347167969e+01
+                  rects: [ 532, 197, 12, 37 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 116
+                  confidence: 9.8804397583007812e+01
+                  rects: [ 543, 40, 26, 56 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 116
+                  confidence: 9.8804397583007812e+01
+                  rects: [ 543, 40, 26, 56 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 70
+                  confidence: 9.2960525512695312e+01
+                  rects: [ 545, 131, 22, 37 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 70
+                  confidence: 9.2960525512695312e+01
+                  rects: [ 545, 131, 22, 37 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 56
+                  confidence: 9.8129104614257812e+01
+                  rects: [ 547, 197, 18, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 56
+                  confidence: 9.8129104614257812e+01
+                  rects: [ 547, 197, 18, 31 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.8322456359863281e+01
+                  rects: [ 568, 197, 7, 31 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.8364089965820312e+01
+                  rects: [ 575, 197, 14, 31 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.8322456359863281e+01
+                  rects: [ 568, 197, 7, 31 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.8364089965820312e+01
+                  rects: [ 575, 197, 14, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.2377418518066406e+01
+                  rects: [ 571, 131, 26, 38 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.2377418518066406e+01
+                  rects: [ 571, 131, 26, 38 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 50
+                  confidence: 9.5542640686035156e+01
+                  rects: [ 572, 81, 17, 29 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 50
+                  confidence: 9.1773666381835938e+01
+                  rects: [ 572, 81, 17, 30 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 100
+                  confidence: 9.2706733703613281e+01
+                  rects: [ 573, 199, 12, 28 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 100
+                  confidence: 9.2706733703613281e+01
+                  rects: [ 573, 199, 12, 28 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 36
+                  confidence: 9.2663452148437500e+01
+                  rects: [ 576, 133, 15, 35 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 36
+                  confidence: 9.2663452148437500e+01
+                  rects: [ 576, 133, 15, 35 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 72
+                  confidence: 9.7908615112304688e+01
+                  rects: [ 593, 550, 23, 31 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.2611534118652344e+01
+                  rects: [ 593, 368, 9, 38 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 76
+                  confidence: 9.5744216918945312e+01
+                  rects: [ 602, 368, 23, 38 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 74
+                  confidence: 9.1978569030761719e+01
+                  rects: [ 596, 197, 10, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 93
+                  confidence: 9.4158493041992188e+01
+                  rects: [ 596, 197, 10, 31 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.8686889648437500e+01
+                  rects: [ 598, 131, 10, 38 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.7772277832031250e+01
+                  rects: [ 608, 131, 16, 38 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.8686889648437500e+01
+                  rects: [ 598, 131, 10, 38 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.7772277832031250e+01
+                  rects: [ 608, 131, 16, 38 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 52
+                  confidence: 9.6024444580078125e+01
+                  rects: [ 603, 133, 15, 34 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 52
+                  confidence: 9.6024444580078125e+01
+                  rects: [ 603, 133, 15, 34 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 74
+                  confidence: 9.1392898559570312e+01
+                  rects: [ 607, 302, 30, 45 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 74
+                  confidence: 9.1392898559570312e+01
+                  rects: [ 607, 302, 30, 45 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.8919006347656250e+01
+                  rects: [ 613, 197, 12, 38 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.8919006347656250e+01
+                  rects: [ 613, 197, 12, 38 ]
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 47
+                  confidence: 9.9118568420410156e+01
+                  rects: [ 620, 640, 12, 29 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.3554306030273438e+01
+                  rects: [ 639, 506, 9, 30 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 47
+                  confidence: 9.1738655090332031e+01
+                  rects: [ 639, 197, 19, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 47
+                  confidence: 9.1738655090332031e+01
+                  rects: [ 639, 197, 19, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 83
+                  confidence: 9.8495849609375000e+01
+                  rects: [ 641, 131, 24, 38 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 83
+                  confidence: 9.8495849609375000e+01
+                  rects: [ 641, 131, 24, 38 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 124
+                  confidence: 8.9196624755859375e+01
+                  rects: [ 640, 505, 7, 32 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 51
+                  confidence: 9.8560821533203125e+01
+                  rects: [ 642, 461, 9, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 51
+                  confidence: 9.8449424743652344e+01
+                  rects: [ 643, 461, 8, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 100
+                  confidence: 9.2357398986816406e+01
+                  rects: [ 650, 314, 31, 37 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 104
+                  confidence: 9.7115417480468750e+01
+                  rects: [ 650, 640, 20, 30 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 105
+                  confidence: 9.3927024841308594e+01
+                  rects: [ 651, 509, 9, 28 ]
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 105
+                  confidence: 9.7960052490234375e+01
+                  rects: [ 655, 462, 7, 30 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 77
+                  confidence: 9.2340538024902344e+01
+                  rects: [ 662, 197, 18, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 77
+                  confidence: 9.2340538024902344e+01
+                  rects: [ 662, 197, 18, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 72
+                  confidence: 9.8733337402343750e+01
+                  rects: [ 675, 506, 23, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 72
+                  confidence: 9.8733337402343750e+01
+                  rects: [ 675, 506, 23, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 100
+                  confidence: 9.9549659729003906e+01
+                  rects: [ 678, 368, 26, 38 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 100
+                  confidence: 9.9549659729003906e+01
+                  rects: [ 678, 368, 26, 38 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 46
+                  confidence: 8.8829696655273438e+01
+                  rects: [ 683, 381, 13, 22 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 46
+                  confidence: 8.8829696655273438e+01
+                  rects: [ 683, 381, 13, 22 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 53
+                  confidence: 9.7675895690917969e+01
+                  rects: [ 684, 197, 18, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 53
+                  confidence: 9.7675895690917969e+01
+                  rects: [ 684, 197, 18, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 33
+                  confidence: 9.2420623779296875e+01
+                  rects: [ 688, 604, 8, 22 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 8.6998695373535156e+01
+                  rects: [ 697, 54, 34, 42 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 8.6998695373535156e+01
+                  rects: [ 697, 54, 34, 42 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 57
+                  confidence: 9.4362625122070312e+01
+                  rects: [ 698, 131, 28, 37 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 73
+                  confidence: 8.2422897338867188e+01
+                  rects: [ 699, 515, 10, 21 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 39
+                  confidence: 8.1730789184570312e+01
+                  rects: [ 706, 515, 7, 6 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 73
+                  confidence: 8.2422897338867188e+01
+                  rects: [ 699, 515, 10, 21 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 39
+                  confidence: 8.1730789184570312e+01
+                  rects: [ 706, 515, 7, 6 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 105
+                  confidence: 9.9137001037597656e+01
+                  rects: [ 701, 595, 8, 30 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 37
+                  confidence: 9.3502128601074219e+01
+                  rects: [ 707, 380, 17, 26 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 56
+                  confidence: 9.7175941467285156e+01
+                  rects: [ 721, 197, 18, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.3099166870117188e+01
+                  rects: [ 728, 131, 11, 38 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.3099166870117188e+01
+                  rects: [ 728, 131, 11, 38 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 67
+                  confidence: 9.9279182434082031e+01
+                  rects: [ 734, 314, 31, 38 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 67
+                  confidence: 9.9334930419921875e+01
+                  rects: [ 734, 314, 31, 38 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.8762237548828125e+01
+                  rects: [ 741, 197, 7, 31 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.8548591613769531e+01
+                  rects: [ 748, 197, 15, 31 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.8762237548828125e+01
+                  rects: [ 741, 197, 7, 31 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.8548591613769531e+01
+                  rects: [ 748, 197, 15, 31 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.2354316711425781e+01
+                  rects: [ 746, 199, 12, 14 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 97
+                  confidence: 9.3779281616210938e+01
+                  rects: [ 746, 214, 12, 13 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.2354316711425781e+01
+                  rects: [ 746, 199, 12, 14 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 97
+                  confidence: 9.3779281616210938e+01
+                  rects: [ 746, 214, 12, 13 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 100
+                  confidence: 9.8572929382324219e+01
+                  rects: [ 767, 143, 22, 26 ]
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 112
+                  confidence: 9.7033638000488281e+01
+                  rects: [ 775, 379, 9, 39 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 80
+                  confidence: 9.7044235229492188e+01
+                  rects: [ 784, 379, 17, 39 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 100
+                  confidence: 9.6442810058593750e+01
+                  rects: [ 783, 383, 13, 21 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 100
+                  confidence: 9.6442810058593750e+01
+                  rects: [ 783, 383, 13, 21 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 83
+                  confidence: 9.9519981384277344e+01
+                  rects: [ 792, 143, 16, 26 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 83
+                  confidence: 9.9519981384277344e+01
+                  rects: [ 792, 143, 16, 26 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 105
+                  confidence: 9.6395439147949219e+01
+                  rects: [ 792, 197, 9, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.9524765014648438e+01
+                  rects: [ 815, 462, 11, 35 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 100
+                  confidence: 9.9521232604980469e+01
+                  rects: [ 814, 594, 20, 32 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.9534286499023438e+01
+                  rects: [ 815, 506, 11, 37 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.9528671264648438e+01
+                  rects: [ 815, 462, 12, 37 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.9534286499023438e+01
+                  rects: [ 815, 506, 11, 37 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.9536018371582031e+01
+                  rects: [ 815, 550, 11, 38 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 56
+                  confidence: 9.6955215454101562e+01
+                  rects: [ 830, 506, 17, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 56
+                  confidence: 9.6955215454101562e+01
+                  rects: [ 830, 506, 17, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 56
+                  confidence: 9.8722633361816406e+01
+                  rects: [ 830, 550, 17, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 56
+                  confidence: 9.8722633361816406e+01
+                  rects: [ 830, 550, 17, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 100
+                  confidence: 9.4428100585937500e+01
+                  rects: [ 830, 461, 18, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 100
+                  confidence: 9.4428100585937500e+01
+                  rects: [ 830, 461, 18, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 54
+                  confidence: 9.8830322265625000e+01
+                  rects: [ 851, 506, 19, 30 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.8516212463378906e+01
+                  rects: [ 850, 461, 7, 31 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.8555046081542969e+01
+                  rects: [ 857, 461, 15, 31 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.8516212463378906e+01
+                  rects: [ 850, 461, 7, 31 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.8555046081542969e+01
+                  rects: [ 857, 461, 15, 31 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.8673362731933594e+01
+                  rects: [ 850, 550, 7, 31 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.8716522216796875e+01
+                  rects: [ 857, 550, 14, 31 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.8673362731933594e+01
+                  rects: [ 850, 550, 7, 31 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.8716522216796875e+01
+                  rects: [ 857, 550, 14, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 100
+                  confidence: 9.8858963012695312e+01
+                  rects: [ 855, 463, 12, 28 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 100
+                  confidence: 9.8858963012695312e+01
+                  rects: [ 855, 463, 12, 28 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 52
+                  confidence: 9.4649490356445312e+01
+                  rects: [ 855, 552, 12, 28 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 52
+                  confidence: 9.4649490356445312e+01
+                  rects: [ 855, 552, 12, 28 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.4663055419921875e+01
+                  rects: [ 863, 137, 12, 32 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.5862670898437500e+01
+                  rects: [ 868, 604, 10, 21 ]
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 54
+                  confidence: 9.7811836242675781e+01
+                  rects: [ 873, 506, 19, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 54
+                  confidence: 9.7492515563964844e+01
+                  rects: [ 873, 506, 18, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 124
+                  confidence: 9.3017074584960938e+01
+                  rects: [ 877, 462, 10, 30 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 124
+                  confidence: 9.3017074584960938e+01
+                  rects: [ 877, 462, 10, 30 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 93
+                  confidence: 9.5495239257812500e+01
+                  rects: [ 877, 550, 10, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 93
+                  confidence: 9.5495239257812500e+01
+                  rects: [ 877, 550, 10, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.7698043823242188e+01
+                  rects: [ 878, 516, 14, 21 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 83
+                  confidence: 9.8991767883300781e+01
+                  rects: [ 879, 197, 20, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 51
+                  confidence: 9.3435485839843750e+01
+                  rects: [ 881, 594, 8, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 105
+                  confidence: 8.8741203308105469e+01
+                  rects: [ 881, 594, 8, 32 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 83
+                  confidence: 9.9383049011230469e+01
+                  rects: [ 893, 604, 14, 21 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 83
+                  confidence: 9.9383049011230469e+01
+                  rects: [ 893, 604, 14, 21 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.8765647888183594e+01
+                  rects: [ 895, 507, 11, 36 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.7728309631347656e+01
+                  rects: [ 895, 315, 16, 36 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.7728309631347656e+01
+                  rects: [ 895, 315, 16, 36 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.8388107299804688e+01
+                  rects: [ 895, 462, 12, 37 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.8765647888183594e+01
+                  rects: [ 895, 507, 11, 36 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.7666885375976562e+01
+                  rects: [ 895, 550, 11, 35 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.8812667846679688e+01
+                  rects: [ 895, 550, 11, 38 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 76
+                  confidence: 9.7965179443359375e+01
+                  rects: [ 903, 198, 25, 30 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 93
+                  confidence: 9.5710334777832031e+01
+                  rects: [ 916, 297, 17, 54 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 124
+                  confidence: 9.2613288879394531e+01
+                  rects: [ 916, 297, 17, 54 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 104
+                  confidence: 9.7862274169921875e+01
+                  rects: [ 917, 639, 20, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 104
+                  confidence: 9.9298728942871094e+01
+                  rects: [ 921, 368, 25, 38 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 55
+                  confidence: 9.4845054626464844e+01
+                  rects: [ 921, 550, 18, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 104
+                  confidence: 9.9459289550781250e+01
+                  rects: [ 921, 368, 25, 38 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 53
+                  confidence: 9.9106658935546875e+01
+                  rects: [ 921, 462, 18, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 55
+                  confidence: 9.4845054626464844e+01
+                  rects: [ 921, 550, 18, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 82
+                  confidence: 9.2560012817382812e+01
+                  rects: [ 922, 506, 18, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 82
+                  confidence: 9.2560012817382812e+01
+                  rects: [ 922, 506, 18, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 53
+                  confidence: 9.9106658935546875e+01
+                  rects: [ 921, 462, 18, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 91
+                  confidence: 9.3998687744140625e+01
+                  rects: [ 931, 143, 16, 26 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 84
+                  confidence: 9.8169303894042969e+01
+                  rects: [ 931, 143, 16, 26 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 83
+                  confidence: 9.9217826843261719e+01
+                  rects: [ 938, 315, 25, 36 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 81
+                  confidence: 9.7562911987304688e+01
+                  rects: [ 943, 462, 19, 30 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 81
+                  confidence: 9.7562911987304688e+01
+                  rects: [ 943, 462, 19, 30 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 56
+                  confidence: 9.9214233398437500e+01
+                  rects: [ 944, 506, 18, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 56
+                  confidence: 9.9214233398437500e+01
+                  rects: [ 944, 506, 18, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 56
+                  confidence: 9.9027946472167969e+01
+                  rects: [ 944, 550, 18, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 56
+                  confidence: 9.9027946472167969e+01
+                  rects: [ 944, 550, 18, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.7038917541503906e+01
+                  rects: [ 949, 380, 12, 25 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 100
+                  confidence: 9.3220390319824219e+01
+                  rects: [ 953, 145, 15, 23 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 100
+                  confidence: 9.3220390319824219e+01
+                  rects: [ 953, 145, 15, 23 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 91
+                  confidence: 9.6041687011718750e+01
+                  rects: [ 964, 374, 13, 33 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 81
+                  confidence: 9.6250793457031250e+01
+                  rects: [ 965, 506, 19, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 91
+                  confidence: 9.7021606445312500e+01
+                  rects: [ 964, 374, 13, 33 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 81
+                  confidence: 9.6250793457031250e+01
+                  rects: [ 965, 506, 19, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 53
+                  confidence: 9.6273323059082031e+01
+                  rects: [ 965, 550, 17, 32 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 50
+                  confidence: 9.1925735473632812e+01
+                  rects: [ 965, 461, 17, 26 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 53
+                  confidence: 9.7161590576171875e+01
+                  rects: [ 965, 550, 17, 32 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 50
+                  confidence: 9.9261596679687500e+01
+                  rects: [ 965, 461, 19, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 105
+                  confidence: 9.6828628540039062e+01
+                  rects: [ 973, 645, 10, 25 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 105
+                  confidence: 9.6828628540039062e+01
+                  rects: [ 973, 645, 10, 25 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 52
+                  confidence: 9.5282287597656250e+01
+                  rects: [ 974, 317, 21, 32 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 52
+                  confidence: 9.5282287597656250e+01
+                  rects: [ 974, 317, 21, 32 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 105
+                  confidence: 9.2450202941894531e+01
+                  rects: [ 986, 645, 9, 25 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 105
+                  confidence: 9.8143005371093750e+01
+                  rects: [ 989, 645, 7, 23 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 104
+                  confidence: 9.9248016357421875e+01
+                  rects: [ 993, 595, 20, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 104
+                  confidence: 9.9248016357421875e+01
+                  rects: [ 993, 595, 20, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 8.8574821472167969e+01
+                  rects: [ 999, 649, 7, 20 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 65
+                  confidence: 9.7945053100585938e+01
+                  rects: [ 1000, 461, 21, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 65
+                  confidence: 9.7945053100585938e+01
+                  rects: [ 1000, 461, 21, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 67
+                  confidence: 9.8098274230957031e+01
+                  rects: [ 1000, 143, 21, 27 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 67
+                  confidence: 9.8098274230957031e+01
+                  rects: [ 1000, 143, 21, 27 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 72
+                  confidence: 9.7134506225585938e+01
+                  rects: [ 1002, 506, 18, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 72
+                  confidence: 9.7134506225585938e+01
+                  rects: [ 1002, 506, 18, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 56
+                  confidence: 9.8182701110839844e+01
+                  rects: [ 1002, 550, 18, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 56
+                  confidence: 9.8182701110839844e+01
+                  rects: [ 1002, 550, 18, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 67
+                  confidence: 9.9498687744140625e+01
+                  rects: [ 1003, 379, 22, 27 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 67
+                  confidence: 9.9498687744140625e+01
+                  rects: [ 1003, 379, 22, 27 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 105
+                  confidence: 9.7256782531738281e+01
+                  rects: [ 1016, 605, 12, 21 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 105
+                  confidence: 9.7256782531738281e+01
+                  rects: [ 1016, 605, 12, 21 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.2964553833007812e+01
+                  rects: [ 1018, 314, 21, 35 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.8797050476074219e+01
+                  rects: [ 1022, 550, 7, 31 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.8418945312500000e+01
+                  rects: [ 1029, 550, 14, 31 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.8895622253417969e+01
+                  rects: [ 1022, 506, 7, 31 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.8778373718261719e+01
+                  rects: [ 1029, 506, 14, 31 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.8797050476074219e+01
+                  rects: [ 1022, 550, 7, 31 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.8418945312500000e+01
+                  rects: [ 1029, 550, 14, 31 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.8895622253417969e+01
+                  rects: [ 1022, 506, 7, 31 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.8778373718261719e+01
+                  rects: [ 1029, 506, 14, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 78
+                  confidence: 9.4980796813964844e+01
+                  rects: [ 1024, 462, 18, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 78
+                  confidence: 9.4980796813964844e+01
+                  rects: [ 1024, 462, 18, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 93
+                  confidence: 8.2776344299316406e+01
+                  rects: [ 1027, 552, 12, 28 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.9528091430664062e+01
+                  rects: [ 1028, 198, 11, 36 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 93
+                  confidence: 8.4872512817382812e+01
+                  rects: [ 1027, 508, 12, 28 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 93
+                  confidence: 8.4872512817382812e+01
+                  rects: [ 1027, 508, 12, 28 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 93
+                  confidence: 8.2776344299316406e+01
+                  rects: [ 1027, 552, 12, 28 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.9477806091308594e+01
+                  rects: [ 1028, 198, 11, 36 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.7285209655761719e+01
+                  rects: [ 1028, 374, 13, 33 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 105
+                  confidence: 9.3532112121582031e+01
+                  rects: [ 1028, 375, 13, 32 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 88
+                  confidence: 9.5691513061523438e+01
+                  rects: [ 1043, 197, 18, 32 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 88
+                  confidence: 9.5691513061523438e+01
+                  rects: [ 1043, 197, 18, 32 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.8861984252929688e+01
+                  rects: [ 1045, 461, 6, 32 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.8086059570312500e+01
+                  rects: [ 1051, 461, 15, 32 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.8861984252929688e+01
+                  rects: [ 1045, 461, 6, 32 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.8086059570312500e+01
+                  rects: [ 1051, 461, 15, 32 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.4847496032714844e+01
+                  rects: [ 1049, 551, 11, 30 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 102
+                  confidence: 9.1897109985351562e+01
+                  rects: [ 1049, 601, 10, 24 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 93
+                  confidence: 8.4188835144042969e+01
+                  rects: [ 1049, 464, 12, 27 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 102
+                  confidence: 9.1897109985351562e+01
+                  rects: [ 1049, 601, 10, 24 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.5976898193359375e+01
+                  rects: [ 1050, 507, 10, 30 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.3769950866699219e+01
+                  rects: [ 1050, 551, 9, 30 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 105
+                  confidence: 9.4922622680664062e+01
+                  rects: [ 1061, 601, 10, 25 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 105
+                  confidence: 9.4922622680664062e+01
+                  rects: [ 1061, 601, 10, 25 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.8807868957519531e+01
+                  rects: [ 1064, 197, 6, 32 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.6734886169433594e+01
+                  rects: [ 1070, 197, 14, 32 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.8807868957519531e+01
+                  rects: [ 1064, 197, 6, 32 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.6734886169433594e+01
+                  rects: [ 1070, 197, 14, 32 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 50
+                  confidence: 9.2175415039062500e+01
+                  rects: [ 1067, 550, 18, 27 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 82
+                  confidence: 9.1950057983398438e+01
+                  rects: [ 1068, 462, 17, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 50
+                  confidence: 9.9425209045410156e+01
+                  rects: [ 1067, 550, 19, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 82
+                  confidence: 9.1950057983398438e+01
+                  rects: [ 1068, 462, 17, 31 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 100
+                  confidence: 9.5388412475585938e+01
+                  rects: [ 1068, 199, 12, 15 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 74
+                  confidence: 9.6824455261230469e+01
+                  rects: [ 1068, 215, 12, 12 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 124
+                  confidence: 9.6870681762695312e+01
+                  rects: [ 1071, 507, 11, 30 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.1837112426757812e+01
+                  rects: [ 1072, 507, 10, 30 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.5728210449218750e+01
+                  rects: [ 1091, 198, 10, 30 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.1397270202636719e+01
+                  rects: [ 1091, 137, 13, 33 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.8857963562011719e+01
+                  rects: [ 1109, 200, 11, 35 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.8713760375976562e+01
+                  rects: [ 1110, 200, 10, 33 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 105
+                  confidence: 9.9086540222167969e+01
+                  rects: [ 1130, 132, 10, 37 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 104
+                  confidence: 9.9509574890136719e+01
+                  rects: [ 1130, 132, 23, 37 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 83
+                  confidence: 9.4186264038085938e+01
+                  rects: [ 1135, 198, 17, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 83
+                  confidence: 9.4186264038085938e+01
+                  rects: [ 1135, 198, 17, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 91
+                  confidence: 9.6302154541015625e+01
+                  rects: [ 1142, 512, 10, 25 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 105
+                  confidence: 9.3602455139160156e+01
+                  rects: [ 1142, 512, 10, 25 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: -61
+                  confidence: 9.7680007934570312e+01
+                  rects: [ 1156, 197, 20, 32 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: -61
+                  confidence: 9.7680007934570312e+01
+                  rects: [ 1156, 197, 20, 32 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 78
+                  confidence: 9.4325012207031250e+01
+                  rects: [ 1172, 132, 22, 37 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 78
+                  confidence: 9.4325012207031250e+01
+                  rects: [ 1172, 132, 22, 37 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.8682250976562500e+01
+                  rects: [ 1177, 506, 6, 32 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.8413085937500000e+01
+                  rects: [ 1183, 506, 15, 32 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.8682250976562500e+01
+                  rects: [ 1177, 506, 6, 32 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.8413085937500000e+01
+                  rects: [ 1183, 506, 15, 32 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 39
+                  confidence: 9.6070960998535156e+01
+                  rects: [ 1179, 197, 3, 25 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.8113983154296875e+01
+                  rects: [ 1182, 197, 14, 25 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 90
+                  confidence: 9.6229080200195312e+01
+                  rects: [ 1179, 201, 19, 28 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.7187461853027344e+01
+                  rects: [ 1181, 508, 12, 28 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 49
+                  confidence: 9.7187461853027344e+01
+                  rects: [ 1181, 508, 12, 28 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 65
+                  confidence: 9.9102256774902344e+01
+                  rects: [ 1197, 131, 26, 38 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 65
+                  confidence: 9.9102256774902344e+01
+                  rects: [ 1197, 131, 26, 38 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 105
+                  confidence: 7.6178146362304688e+01
+                  rects: [ 1203, 506, 6, 30 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 50
+                  confidence: 9.9390426635742188e+01
+                  rects: [ 1215, 197, 19, 32 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.8636878967285156e+01
+                  rects: [ 1220, 507, 6, 31 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.7458358764648438e+01
+                  rects: [ 1226, 507, 15, 31 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.8636878967285156e+01
+                  rects: [ 1220, 507, 6, 31 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.7458358764648438e+01
+                  rects: [ 1226, 507, 15, 31 ]
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 40
+                  confidence: 9.8726997375488281e+01
+                  rects: [ 1224, 131, 9, 39 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 41
+                  confidence: 9.8682601928710938e+01
+                  rects: [ 1233, 131, 18, 39 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 100
+                  confidence: 9.5032058715820312e+01
+                  rects: [ 1225, 509, 12, 27 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 100
+                  confidence: 9.5032058715820312e+01
+                  rects: [ 1225, 509, 12, 27 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 100
+                  confidence: 9.6534790039062500e+01
+                  rects: [ 1230, 133, 15, 35 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 100
+                  confidence: 9.6534790039062500e+01
+                  rects: [ 1230, 133, 15, 35 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 54
+                  confidence: 9.9017829895019531e+01
+                  rects: [ 1237, 197, 20, 32 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 54
+                  confidence: 9.8547714233398438e+01
+                  rects: [ 1237, 197, 20, 32 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: -61
+                  confidence: 9.7375129699707031e+01
+                  rects: [ 1252, 131, 25, 39 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 55
+                  confidence: 9.9335494995117188e+01
+                  rects: [ 1259, 198, 19, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 55
+                  confidence: 9.9335494995117188e+01
+                  rects: [ 1259, 198, 19, 31 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 50
+                  confidence: 9.9295677185058594e+01
+                  rects: [ 1279, 131, 24, 38 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 50
+                  confidence: 9.9295677185058594e+01
+                  rects: [ 1279, 131, 24, 38 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 55
+                  confidence: 9.9025512695312500e+01
+                  rects: [ 1281, 198, 19, 30 ]
+   -
+      number_of_symbols: 1
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 55
+                  confidence: 9.9025512695312500e+01
+                  rects: [ 1281, 198, 19, 30 ]

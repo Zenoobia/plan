@@ -106,8 +106,8 @@ TextLines:
             number_of_chars: 1
             Characters:
                -
-                  characters: 33
-                  confidence: 6.2276840209960938e+01
+                  characters: 49
+                  confidence: 4.6582031250000000e+01
                   rects: [ 429, 3099, 4, 66 ]
    -
       number_of_symbols: 1
@@ -116,8 +116,8 @@ TextLines:
             number_of_chars: 1
             Characters:
                -
-                  characters: 33
-                  confidence: 6.2276840209960938e+01
+                  characters: 49
+                  confidence: 4.6582031250000000e+01
                   rects: [ 429, 3099, 4, 66 ]
    -
       number_of_symbols: 1
@@ -1562,25 +1562,13 @@ TextLines:
       Symbols:
          []
    -
-      number_of_symbols: 1
+      number_of_symbols: 0
       Symbols:
-         -
-            number_of_chars: 1
-            Characters:
-               -
-                  characters: 91
-                  confidence: 6.5149246215820312e+01
-                  rects: [ 3347, 3116, 6, 43 ]
+         []
    -
-      number_of_symbols: 1
+      number_of_symbols: 0
       Symbols:
-         -
-            number_of_chars: 1
-            Characters:
-               -
-                  characters: 91
-                  confidence: 6.5149246215820312e+01
-                  rects: [ 3347, 3116, 6, 43 ]
+         []
    -
       number_of_symbols: 1
       Symbols:
@@ -1870,15 +1858,15 @@ TextLines:
             number_of_chars: 1
             Characters:
                -
-                  characters: 33
-                  confidence: 6.6580963134765625e+01
+                  characters: 49
+                  confidence: 5.3944778442382812e+01
                   rects: [ 3667, 3120, 2, 66 ]
          -
             number_of_chars: 1
             Characters:
                -
-                  characters: -61
-                  confidence: 5.9767364501953125e+01
+                  characters: 49
+                  confidence: 3.0387657165527344e+01
                   rects: [ 3671, 3120, 2, 66 ]
    -
       number_of_symbols: 2
@@ -1887,15 +1875,15 @@ TextLines:
             number_of_chars: 1
             Characters:
                -
-                  characters: 33
-                  confidence: 6.6580963134765625e+01
+                  characters: 49
+                  confidence: 5.3944778442382812e+01
                   rects: [ 3667, 3120, 2, 66 ]
          -
             number_of_chars: 1
             Characters:
                -
-                  characters: -61
-                  confidence: 5.9767364501953125e+01
+                  characters: 49
+                  confidence: 3.0387657165527344e+01
                   rects: [ 3671, 3120, 2, 66 ]
    -
       number_of_symbols: 1
@@ -2443,25 +2431,13 @@ TextLines:
                   confidence: 9.8144218444824219e+01
                   rects: [ 4188, 3168, 25, 36 ]
    -
-      number_of_symbols: 1
+      number_of_symbols: 0
       Symbols:
-         -
-            number_of_chars: 1
-            Characters:
-               -
-                  characters: 70
-                  confidence: 6.0600852966308594e+01
-                  rects: [ 4221, 3121, 6, 67 ]
+         []
    -
-      number_of_symbols: 1
+      number_of_symbols: 0
       Symbols:
-         -
-            number_of_chars: 1
-            Characters:
-               -
-                  characters: 70
-                  confidence: 6.0600852966308594e+01
-                  rects: [ 4221, 3121, 6, 67 ]
+         []
    -
       number_of_symbols: 1
       Symbols:

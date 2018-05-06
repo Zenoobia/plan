@@ -351,6 +351,7 @@ class App : public pl::Application {
     Config config;
     config.loadConfig();
     ImageProcessor imgProcessor(config);
+
     TextDetection textDetection(config, &imgProcessor);
 
     auto pImageInput = new DirectoryInput(Directory("../data/test", ".png"));
@@ -360,18 +361,21 @@ class App : public pl::Application {
     imgProcessor.setInput(img);
     imgProcessor.process();
     textDetection.setInput(pImageInput);
-    textDetection.process();
+    textDetection.process(false);
 
     KNearestOcr ocr(config);
     ocr.loadTrainingData();
 
-    static GLuint tex = 0;
+    bool initial = true;
+
+    //    static GLuint tex = 0;
+    m_ImageTex = 0;
+    
+
     while (!glfwWindowShouldClose(m_pGLFWwindow)) {
       initDraw(); 
-      ImGui::Begin("");
-
-      if(img.data && tex == 0) {
-        tex = matToTexture(img);
+      if(img.data && m_ImageTex == 0) {
+        m_ImageTex = matToTexture(img);
       }
 
 #if 1 // Draw img
@@ -379,15 +383,20 @@ class App : public pl::Application {
         ImVec2 imgSize{static_cast<float>(img.cols), static_cast<float>(img.rows)};
         ImVec2 imgPos{0.0, 0.0};
 
-        ImGui::SetNextWindowSize(imgSize / 4);
+        if (initial) {
+          ImGui::SetNextWindowSize(imgSize / 4);
+          initial = false; 
+        }
+        
+        ImGui::Begin("");
 
         //ImGui::Image(GLUINT2TEX(tex), {static_cast<float>(img.cols), static_cast<float>(img.rows)});
-        ImGui::Image(GLUINT2TEX(tex), {static_cast<float>(img.cols / 4), static_cast<float>(img.rows / 4)});
+        ImGui::Image(GLUINT2TEX(m_ImageTex), {static_cast<float>(img.cols / 4), static_cast<float>(img.rows / 4)});
         ImGui::NewLine();
+        ImGui::End(); 
       }
 #endif
 #if 1 // Draw Symbols with context
-      ImGui::End(); 
       ImGui::Begin("Symbols");
       for(TextLine &text : textDetection.getTextLines()) {
         for(Symbol &symbol : text.vSymbols) {
@@ -396,7 +405,7 @@ class App : public pl::Application {
             if(symbol.vConfidence[i] > 90.f) {
               auto &rect = symbol.vDetectedRects[i];
               auto &character = symbol.vDetectedChars[i];
-              ImGuiDrawSubImage(img, rect, tex);
+              ImGuiDrawSubImage(img, rect, m_ImageTex);
               ImGui::SameLine();
               if(ImGui::Button("Learn")) {
                 ocr.learn(img, rect, character);
@@ -425,13 +434,22 @@ class App : public pl::Application {
       if(ImGui::IsKeyPressed('S')) {
         ocr.saveTrainingData();
         textDetection.saveData();
-      } 
-
-      if(ImGui::IsKeyPressed('X')) {
+      } else if(ImGui::IsKeyPressed('X')) {
         glfwSetWindowShouldClose(m_pGLFWwindow, GLFW_TRUE);
         break;
-      }
+      } else if (ImGui::IsKeyPressed('L') && pImageInput->nextImage()) {
+        imgProcessor.setInput(img);
+        img = pImageInput->getImage().clone();
+        imgProcessor.process();
+        textDetection.setInput(pImageInput);
+        textDetection.process(false);
 
+        glDeleteTextures(1, &m_ImageTex);
+        m_ImageTex = 0;
+        initial = true; 
+      } else if (ImGui::IsKeyPressed('R')) {
+        textDetection.process(false); 
+      }
       ImGui::End();
       draw();
       finishDraw();

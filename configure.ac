@@ -12,7 +12,7 @@ AC_PROG_CC
 
 # Conditionals
 AC_ARG_ENABLE(debug,
-AS_HELP_STRING([--enable-debug], [enable debugging, default: no]),
+AS_HELP_STRING([--enable-debug], [enable debugging, default: yes]),
 [case "${enableval}" in
       yes) debug=true ;;
       no)  debug=false ;;
