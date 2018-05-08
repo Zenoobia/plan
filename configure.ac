@@ -21,7 +21,7 @@ esac],
 [debug=false])
 
 AM_CONDITIONAL(DEBUG, test x"$debug" = x"true")
-AC_DEFINE_UNQUOTED([DEBUG], [$debug])
+#AC_DEFINE_UNQUOTED([DEBUG], ["$debug"])
 
 AC_ARG_ENABLE(gl3,
 AS_HELP_STRING([--enable-gl3], [enable opengl3, default: no]),
@@ -33,7 +33,8 @@ esac],
 [gl3=false])
 
 AM_CONDITIONAL(GL3, test x"$gl3" = x"true")
-AC_DEFINE_UNQUOTED([GL3], [$gl3])
+#AC_DEFINE_UNQUOTED([GL3], ["$gl3"])
+#AC_DEFINE_UNQUOTED([GL3], ["false"])
 
 # Checks for libraries.
 LT_INIT
