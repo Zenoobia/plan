@@ -2,7 +2,9 @@
 
 #include <string>
 #include <list>
-#include <dirent.h>
+//#include <dirent_portable.h>
+//#include "../include/dirent.h"
+#include <tinydir.h>
 #include <cstring>
 
 

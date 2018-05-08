@@ -135,7 +135,7 @@ Application::~Application() {
 };
 
 void Application::drawAllDocuments() {
-#if 1 // #Drawing loaded documents
+#if 0 // #Drawing loaded documents
   {
     m_entityManager.for_each<Document>
         (
@@ -475,6 +475,7 @@ static
     DrawRotatedRectangle(image, rr.center, rr.size, rr.angle);
   }
 
+#if 0
   bool Application::loadDocument(const std::string &path, const int DPI) {
 
     FrameType frameType = FRAME_TYPE_UNKNOWN;
@@ -509,7 +510,7 @@ static
               }});
     return (ent.get_status() == ep::entity_status::OK);
   }
-
+#endif
   void Application::processImage(const cv::Mat &image, cv::Mat &imageDest) {
 #if 0
     image.convertTo(imageDest, CV_8UC4);//CV_32FC1);

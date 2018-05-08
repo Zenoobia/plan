@@ -64,6 +64,8 @@ autom4te.cache
 .libs
 /build
 
+.dirstamp
+
 /src/Makefile
 /src/config.*
 /src/doc

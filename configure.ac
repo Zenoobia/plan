@@ -29,11 +29,12 @@ AC_DISABLE_STATIC
 AC_PROG_LIBTOOL(libtool)
 
 AC_CHECK_LIB(glfw, glfwInit, [], AC_MSG_ERROR([Could not find libglfw. Try $ ./configure LDFLAGS='-Lyour-glfw-lib-path']))
-AC_CHECK_LIB(GL, glPushMatrix, [], AC_MSG_ERROR([Could not find libGL. Try $ ./configure LDFLAGS='-Lyour-GL-lib-path']))
+#AC_CHECK_LIB(GL, glPushMatrix, [], AC_MSG_ERROR([Could not find libGL. Try $ ./configure LDFLAGS='-Lyour-GL-lib-path']))
+AC_CHECK_LIB(opengl32, glPushMatrix, [], AC_MSG_ERROR([Could not find libGL. Try $ ./configure LDFLAGS='-Lyour-GL-lib-path']))
 
 # Checks for header files.
 AC_CHECK_HEADERS([fcntl.h limits.h stdint.h string.h sys/time.h termios.h unistd.h])
-AC_CHECK_HEADERS([argtable2.h], [], AC_MSG_ERROR([Could not find argtable2.h. Try $ ./configure CFLAGS='-Iyour-argtable2-include-path]))
+#AC_CHECK_HEADERS([argtable2.h], [], AC_MSG_ERROR([Could not find argtable2.h. Try $ ./configure CFLAGS='-Iyour-argtable2-include-path]))
 AC_CHECK_HEADERS([GLFW/glfw3.h], [], AC_MSG_ERROR([Could not find GLFW/glfw3.h. Try $ ./configure CFLAGS='-Iyour-GLFW-include-path]))
 
 # Finds Dependencies

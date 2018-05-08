@@ -1,7 +1,11 @@
 ./autogen.sh
 ##mkdir -p build; cd build
 cd src
-. ../configure
+if [ "$1" == "win" ]; then
+	. ../configure --prefix=/mingw64
+else
+	. ../configure --prefix=/usr
+fi
 make -j6
 cd ..
 

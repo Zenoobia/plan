@@ -20,12 +20,12 @@
 #include <imgui_impl_glfw_gl3.h>
 #include <imguifilesystem.h>
 
-#include <entityplus/entity.h>
-namespace ep = entityplus;
-using ep::entity_manager;
-using ep::component_list;
-using ep::tag_list;
-using ep::entity_status;
+//#include <entityplus/entity.h>
+//namespace ep = entityplus;
+//using ep::entity_manager;
+//using ep::component_list;
+//using ep::tag_list;
+//using ep::entity_status;
 
 
 #include <opencv2/highgui/highgui.hpp>
@@ -132,8 +132,8 @@ public:
     bool valid = false;
   };
 
-  using entity_manager_t = entity_manager<component_list<int, Document, Frame>, tag_list<>>;
-  using entity_t = entity_manager_t::entity_t;
+  //using entity_manager_t = entity_manager<component_list<int, Document, Frame>, tag_list<>>;
+  //using entity_t = entity_manager_t::entity_t;
 
 
   class Application
@@ -144,7 +144,7 @@ public:
 
 
   public:
-    entity_manager_t m_entityManager;
+    //entity_manager_t m_entityManager;
   public:
     static std::string getFileExtension(const std::string& FileName);
     static GLuint matToTexture(const cv::Mat &mat,
