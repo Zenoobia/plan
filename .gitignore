@@ -60,6 +60,7 @@ autom4te.cache
 
 /pkg
 .deps
+.deps
 .libs
 /build
 
