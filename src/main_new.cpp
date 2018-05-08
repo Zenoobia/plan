@@ -315,11 +315,11 @@ ImVec2 operator+(ImVec2 const& a, ImVec2 const& b) {
   return ImVec2{a.x + b.x, a.y + b.y};
 }
 
-ImVec2 operator/(ImVec2 const& a, float const b) {return ImVec2{a.x / b, a.y / b};} 
+ImVec2 operator/(ImVec2 const& a, float const b) {return ImVec2{a.x / b, a.y / b};}
 ImVec2 operator/(ImVec2 const& a, ImVec2 const& b) {
   return ImVec2{a.x / b.x, a.y / b.y};
 }
-ImVec2 operator+=(ImVec2 &a, float const b) {return ImVec2{a.x + b, a.y + b};} 
+ImVec2 operator+=(ImVec2 &a, float const b) {return ImVec2{a.x + b, a.y + b};}
 ImVec2 operator+=(ImVec2 &a, ImVec2 const &b) {
   return ImVec2{a.x + b.y, a.y + b.y};
 }
@@ -356,12 +356,12 @@ class App : public pl::Application {
 
     auto pImageInput = new DirectoryInput(Directory("../data/test", ".png"));
 
-    pImageInput->nextImage(); 
+    pImageInput->nextImage();
     cv::Mat &img = pImageInput->getImage();
     imgProcessor.setInput(img);
     imgProcessor.process();
     textDetection.setInput(pImageInput);
-    textDetection.process(false);
+    textDetection.process(true);
 
     KNearestOcr ocr(config);
     ocr.loadTrainingData();
@@ -370,10 +370,10 @@ class App : public pl::Application {
 
     //    static GLuint tex = 0;
     m_ImageTex = 0;
-    
+
 
     while (!glfwWindowShouldClose(m_pGLFWwindow)) {
-      initDraw(); 
+      initDraw();
       if(img.data && m_ImageTex == 0) {
         m_ImageTex = matToTexture(img);
       }
@@ -385,15 +385,14 @@ class App : public pl::Application {
 
         if (initial) {
           ImGui::SetNextWindowSize(imgSize / 4);
-          initial = false; 
+          initial = false;
         }
-        
+
         ImGui::Begin("");
 
-        //ImGui::Image(GLUINT2TEX(tex), {static_cast<float>(img.cols), static_cast<float>(img.rows)});
         ImGui::Image(GLUINT2TEX(m_ImageTex), {static_cast<float>(img.cols / 4), static_cast<float>(img.rows / 4)});
         ImGui::NewLine();
-        ImGui::End(); 
+        ImGui::End();
       }
 #endif
 #if 1 // Draw Symbols with context
@@ -442,13 +441,13 @@ class App : public pl::Application {
         img = pImageInput->getImage().clone();
         imgProcessor.process();
         textDetection.setInput(pImageInput);
-        textDetection.process(false);
+        textDetection.process(true);
 
         glDeleteTextures(1, &m_ImageTex);
         m_ImageTex = 0;
-        initial = true; 
+        initial = true;
       } else if (ImGui::IsKeyPressed('R')) {
-        textDetection.process(false); 
+        textDetection.process(false);
       }
       ImGui::End();
       draw();
@@ -487,7 +486,7 @@ class App : public pl::Application {
     cv::Mat imgSrc = pImageInput->getImage().clone();
 
     Pix *pPix = nullptr;
-    //pPix = mat8ToPix(imgSrc); 
+    //pPix = mat8ToPix(imgSrc);
 
     proc.process();
 

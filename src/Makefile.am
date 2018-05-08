@@ -37,5 +37,5 @@ libImgui_la_SOURCES = ../third_party/repos/imgui/imgui.cpp \
 
 libImgui_la_CPPFLAGS = $(GL_CFLAGS) $(AM_CXXFLAGS)
 
-libImgui_la_CPPFLAGS += -I ../third_party/repos/imgui -I ../third_party/repos/imgui/examples/libs/glfw/ -I ../third_party/repos/ #-std=c++17
+libImgui_la_CPPFLAGS += -I../third_party/repos/imgui -I../third_party/repos/imgui/examples/libs/glfw/ -I../third_party/repos/ #-std=c++17
 
