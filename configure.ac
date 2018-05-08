@@ -33,7 +33,12 @@ esac],
 [gl3=false])
 
 AM_CONDITIONAL(GL3, test x"$gl3" = x"true")
-#AC_DEFINE_UNQUOTED([GL3], ["$gl3"])
+
+if test "$gl3" = "true"; then
+    AC_DEFINE([USE_GL3], ["true"], ["Use GL3"])
+fi
+
+#AC_DEFINE_UNQUOTED([GL3], [${gl3}])
 #AC_DEFINE_UNQUOTED([GL3], ["false"])
 
 # Checks for libraries.
@@ -43,8 +48,9 @@ AC_DISABLE_STATIC
 AC_PROG_LIBTOOL(libtool)
 
 AC_CHECK_LIB(glfw, glfwInit, [], AC_MSG_ERROR([Could not find libglfw. Try $ ./configure LDFLAGS='-Lyour-glfw-lib-path']))
-#AC_CHECK_LIB(GL, glPushMatrix, [], AC_MSG_ERROR([Could not find libGL. Try $ ./configure LDFLAGS='-Lyour-GL-lib-path']))
-AC_CHECK_LIB(opengl32, glPushMatrix, [], AC_MSG_ERROR([Could not find libGL. Try $ ./configure LDFLAGS='-Lyour-GL-lib-path']))
+
+AC_CHECK_LIB(GL, glPushMatrix, [], AC_MSG_ERROR([Could not find libGL. Try $ ./configure LDFLAGS='-Lyour-GL-lib-path']))
+#AC_CHECK_LIB(opengl32, glPushMatrix, [], AC_MSG_ERROR([Could not find libopengl32. Try $ ./configure LDFLAGS='-Lyour-opengl32-lib-path']))
 
 # Checks for header files.
 AC_CHECK_HEADERS([fcntl.h limits.h stdint.h string.h sys/time.h termios.h unistd.h])

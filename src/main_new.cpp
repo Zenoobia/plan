@@ -360,8 +360,15 @@ class App : public pl::Application {
     cv::Mat &img = pImageInput->getImage();
     imgProcessor.setInput(img);
     imgProcessor.process();
+
+    // TODO: Always convert Mat to PIX instead of loading raw image to PIX
+    pImageInput->updatePix(); 
+    
+
+    static bool const useCache = false;
+    
     textDetection.setInput(pImageInput);
-    textDetection.process(true);
+    textDetection.process(useCache);
 
     KNearestOcr ocr(config);
     ocr.loadTrainingData();
@@ -375,7 +382,7 @@ class App : public pl::Application {
     while (!glfwWindowShouldClose(m_pGLFWwindow)) {
       initDraw();
       if(img.data && m_ImageTex == 0) {
-        m_ImageTex = matToTexture(img);
+        m_ImageTex = matToTexture(pImageInput->getImage());
       }
 
 #if 1 // Draw img
@@ -399,13 +406,13 @@ class App : public pl::Application {
       ImGui::Begin("Symbols");
       for(TextLine &text : textDetection.getTextLines()) {
         for(Symbol &symbol : text.vSymbols) {
-          //for(char const &character: symbol.vDetectedChars) {
           for(auto i : util::lang::indices(symbol.vDetectedChars)) {
-            if(symbol.vConfidence[i] > 90.f) {
+            if(symbol.vConfidence[i] >= 90.f) {
               auto &rect = symbol.vDetectedRects[i];
               auto &character = symbol.vDetectedChars[i];
               ImGuiDrawSubImage(img, rect, m_ImageTex);
               ImGui::SameLine();
+              //if(ImGui::Button(&character)) {
               if(ImGui::Button("Learn")) {
                 ocr.learn(img, rect, character);
                 symbol.vConfidence[i] = 1.f;
@@ -440,8 +447,10 @@ class App : public pl::Application {
         imgProcessor.setInput(img);
         img = pImageInput->getImage().clone();
         imgProcessor.process();
+        pImageInput->updatePix(); 
+
         textDetection.setInput(pImageInput);
-        textDetection.process(true);
+        textDetection.process(useCache);
 
         glDeleteTextures(1, &m_ImageTex);
         m_ImageTex = 0;

@@ -29,7 +29,7 @@ ImageProcessor::ImageProcessor(const Config & config) :
 /**
  * Set the input image.
  */
-void ImageProcessor::setInput(cv::Mat & img) {
+void ImageProcessor::setInput(cv::Mat &img) {
   _img = img;
 }
 
@@ -67,16 +67,19 @@ void ImageProcessor::process() {
   if(_img.channels() >= 3 ) {
     cvtColor(_img, _img, CV_BGR2GRAY);
     //cvtColor(_img, _imgGray, CV_BGR2GRAY);
-    _imgGray = _img.clone();
-  }else {
-    _imgGray = _img.clone();
   }
 
+  // Crop image
+  //_imgGray = _img(cv::Rect(800, 400, _img.cols - 800, _img.rows - 400)); 
+  _imgGray = _img; 
+
   // clear spots
-  filterSpots(_imgGray, _img);
 
   BhThresholder bt; 
-  bt.doThreshold(_imgGray, _img, BhThresholdMethod::OTSU);
+  bt.doThreshold(_imgGray, _imgGray, BhThresholdMethod::OTSU);
+  filterSpots(_imgGray, _imgGray); 
+
+  _img = _imgGray; 
 
   if (_debugWindow) {
     showImage();
@@ -111,8 +114,8 @@ void ImageProcessor::processTess(PIX* pix) {
                ri->BoundingBox(level, &x1, &y1, &x2, &y2);
                auto rect = cv::Rect{x1, y1, x2-x1, y2-y1};
 
-               text.addCharacter(*word, conf, rect);
-               //charD.Character = word; 
+                 text.addCharacter(*word, conf, rect);
+                 //charD.Character = word; 
                //charD.Confidence = conf; 
 
              }

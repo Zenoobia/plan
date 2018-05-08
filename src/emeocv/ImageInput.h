@@ -33,6 +33,7 @@ public:
   virtual bool nextPix() = 0;
   Pix* getPix() const;
   static Pix* loadPix(Directory &directory, const std::string &fileName);
+  virtual bool updatePix(); 
   Pix *_pPix = nullptr;
 protected:
   cv::Mat _img;

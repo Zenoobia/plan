@@ -84,7 +84,7 @@ struct TextLine {
 
   inline
   void addSymbol(float const &confidence, char const &character, cv::Rect const &rect) {
-    vSymbols.emplace_back(Symbol{confidence, character, rect}); 
+    vSymbols.push_back(Symbol{confidence, character, rect}); 
   } 
   std::vector<Symbol> vSymbols;
   cv::Rect rect; 

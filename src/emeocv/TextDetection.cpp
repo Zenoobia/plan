@@ -146,12 +146,17 @@ void TextDetection::process(bool const loadCached) {
     return;
   } else {
     auto digitRects = findCounterDigits(_pImageInput->getImage(), 0, 0);
+
     for(auto const &rect : digitRects) {
       _vTextLines.emplace_back(rect);
     }
 
+    //_vTextLines.clear();
+    //_vTextLines.emplace_back(cv::Rect{1, 1, 1000, 1000});
+
     // After filling with potential Rects
     for(auto &textLine : _vTextLines) {
+      cv::rectangle(_img, textLine.rect, {255,0,0}, 1);
       std::vector<Symbol> detectedCharacters;
 
       cv::Rect const &rect = textLine.rect;
@@ -160,28 +165,15 @@ void TextDetection::process(bool const loadCached) {
       tesseract::PageIteratorLevel level = tesseract::RIL_SYMBOL;//tesseract::RIL_WORD;
       tesseract::ResultIterator* ri = _pTessApi->GetIterator();
 
+      char *lastWord = nullptr;
+
       if (ri != 0) {
         do {
-          const char *word = ri->GetUTF8Text(level);
+          char *word = ri->GetUTF8Text(level);
           float conf = ri->Confidence(level);
-#if 0
 
-          if(conf >=90.0 && word != nullptr) {
-
-            //printf("Word: %s , Confidence: %f", word, conf );
-
-            int x1, y1, x2, y2;
-            ri->BoundingBox(level, &x1, &y1, &x2, &y2);
-            auto rect = cv::Rect{x1, y1, x2-x1, y2-y1};
-
-            //charD.Character = word; 
-            //charD.Confidence = conf; 
-
-          }
-#else
-
-
-          if(word != 0) {
+          //          if(word != 0) {
+          if(conf >=90.0 && word != 0 && word != nullptr && word != lastWord) {
             int x1, y1, x2, y2;
             ri->BoundingBox(level, &x1, &y1, &x2, &y2);
             auto characterRect = cv::Rect{x1, y1, x2-x1, y2-y1};
@@ -192,26 +184,30 @@ void TextDetection::process(bool const loadCached) {
 
             tesseract::ChoiceIterator ci(*ri);
             do {
-                  printf("\t- ");
-                  const char *choice = ci.GetUTF8Text();
-                  printf("%s conf: %f\n", choice, ci.Confidence());
-                } while(ci.Next());
+              if(ci.GetUTF8Text() != word) {
+                printf("\t- ");
+                const char *choice = ci.GetUTF8Text();
+                printf("%s conf: %f\n", choice, ci.Confidence());
+                //      textLine.addSymbol(ci.Confidence(), *choice, characterRect); 
               }
-#endif
-              delete[] word;
-            } while (ri->Next(level));
+            } while(ci.Next());
           }
-
-        }
-        saveData();
+          lastWord = word;
+          delete[] word;
+        } while (ri->Next(level));
       }
+    }
+                                    saveData();
+  }
 }
 
 std::vector<cv::Rect> TextDetection::findTextLines() {
 
   std::vector<cv::Rect> boundRect;
   cv::Mat img_gray, img_sobel, img_threshold, element;
-  cvtColor(_img, img_gray, CV_BGR2GRAY);
+  // No need to convert to gray
+  //cvtColor(_img, img_gray, CV_BGR2GRAY);
+  img_gray = _img;
 
   cv::Sobel(img_gray, img_sobel, CV_8U, 1, 0, 3, 1, 0, cv::BORDER_DEFAULT);
   cv::threshold(img_sobel, img_threshold, 0, 255, CV_THRESH_OTSU+CV_THRESH_BINARY);
@@ -227,14 +223,14 @@ std::vector<cv::Rect> TextDetection::findTextLines() {
 
   std::vector<std::vector<cv::Point> > contours_poly( contours.size() );
   for( int i = 0; i < contours.size(); i++ )
-    if (contours[i].size()>200)
-    {
-      cv::approxPolyDP( cv::Mat(contours[i]), contours_poly[i], 3, true );
-      cv::Rect appRect( boundingRect( cv::Mat(contours_poly[i]) ));
-      //if (appRect.width>appRect.height)
-      boundRect.push_back(appRect);
-      cv::rectangle(_img, appRect, cv::Scalar{0,0,255}, 2);
-    }
+     if (contours[i].size()>200)
+     {
+       cv::approxPolyDP( cv::Mat(contours[i]), contours_poly[i], 3, true );
+       cv::Rect appRect( boundingRect( cv::Mat(contours_poly[i]) ));
+       //if (appRect.width>appRect.height)
+       boundRect.push_back(appRect);
+       cv::rectangle(_img, appRect, cv::Scalar{0,0,255}, 2);
+     }
   return boundRect;
 }
 
@@ -357,31 +353,31 @@ class sortRectByX {
 
 std::vector<cv::Rect> TextDetection::findCounterDigits(const cv::Mat &cImg, const int xOffset, const int yOffset) {
 #if 1
-  cv::Mat edges = _pImageProcessor->cannyEdges(cImg);
+      cv::Mat edges = _pImageProcessor->cannyEdges(cImg);
 
-  cv::Mat img_ret = edges.clone();
+      cv::Mat img_ret = edges.clone();
 
-  // find contours in whole image
-  Contours contours, filteredContours;
-  Rects boundingBoxes;
-  cv::findContours(edges, contours,
-                   CV_RETR_LIST// CV_RETR_EXTERNAL
-                   , CV_CHAIN_APPROX_NONE);
+      // find contours in whole image
+      Contours contours, filteredContours;
+      Rects boundingBoxes;
+      cv::findContours(edges, contours,
+                       CV_RETR_LIST// CV_RETR_EXTERNAL
+                       , CV_CHAIN_APPROX_NONE);
 
-  // filter contours by bounding rect size
-  _pImageProcessor->filterContours(contours, boundingBoxes, filteredContours);
+      // filter contours by bounding rect size
+      _pImageProcessor->filterContours(contours, boundingBoxes, filteredContours);
 
-  //  std::cout << "number of filtered contours: " << filteredContours.size();
+      //  std::cout << "number of filtered contours: " << filteredContours.size();
 
 #if 0 // find bounding boxes that are aligned at y position
-  Rects  alignedBoundingBoxes, tmpRes;
-  for (Rects::const_iterator ib = boundingBoxes.begin(); ib != boundingBoxes.end(); ++ib) {
-    tmpRes.clear();
-    tmpRes = findAlignedBoxes(ib, boundingBoxes.end());
-    if (tmpRes.size() > alignedBoundingBoxes.size()) {
-      alignedBoundingBoxes = tmpRes;
-    }
-  }
+      Rects  alignedBoundingBoxes, tmpRes;
+      for (Rects::const_iterator ib = boundingBoxes.begin(); ib != boundingBoxes.end(); ++ib) {
+        tmpRes.clear();
+        tmpRes = findAlignedBoxes(ib, boundingBoxes.end());
+        if (tmpRes.size() > alignedBoundingBoxes.size()) {
+          alignedBoundingBoxes = tmpRes;
+        }
+      }
 #else
   Rects alignedBoundingBoxes = boundingBoxes;
 #endif
@@ -390,15 +386,13 @@ std::vector<cv::Rect> TextDetection::findCounterDigits(const cv::Mat &cImg, cons
   // sort bounding boxes from left to right
   std::sort(alignedBoundingBoxes.begin(), alignedBoundingBoxes.end(), sortRectByX());
 
-#if 0
-  // Cut out Pix
-  BOX *box = boxCreate(r.x, r.y, r.width, r.height);
-  PIX* croppedDigit = pixClipRectangle(pixImage, box, NULL);
-  _vDigitsPix.push_back(croppedDigit); 
-  //_vDigitsPix.emplace_back(pixClipRectangle(pixImage, box, NULL)); 
-  boxDestroy(&box);
+#if 0 // Not working
+  // draw contours
+  cv::Mat cont = cv::Mat::zeros(edges.rows, edges.cols, CV_8UC1);
+  cv::drawContours(_img, cont, -1, cv::Scalar(255));
+  //_img = cont; 
+  //cv::drawContours(_img, contours, -1, cv::Scalar(255));
 #endif
-  //pixDestroy(&pixImage);
 
   return alignedBoundingBoxes;
 #endif

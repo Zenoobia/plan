@@ -72,128 +72,136 @@ Pix* ImageInput::loadPix(Directory &directory, const std::string &fileName) {
   return pixRead(directory.fullpath(fileName).c_str());
 }
 
-cv::Mat DirectoryInput::loadImage(const std::string &path) {
-  std::cout << "PDF.length" << std::string{"pdf"}.length() << std::endl;
-  if (path.find("pdf", (path.length() - 3)) != std::string::npos) {
-    return readPDFtoCV(path);
-  }
-  return cv::imread(path.c_str(), 0);
-}
-
-DirectoryInput::DirectoryInput(const Directory& directory) : _directory(directory) {
-  _filenameList = _directory.list();
-  _filenameList.sort();
-  _itFilename = _filenameList.begin();
-}
-
-cv::Mat DirectoryInput::loadImage(Directory &directory, const std::string &fileName) {
-  std::cout << "PDF.length " << std::string{"pdf"}.length() << std::endl;
-  //return loadImage(directory.fullpath(fileName)); 
-  if (directory.hasExtension(fileName.c_str(), "pdf")) {
-     return readPDFtoCV(directory.fullpath(fileName));
-  }
-  return cv::imread(directory.fullpath(fileName));
-}
-
-bool DirectoryInput::nextPix() {
-  if (_itFilename == _filenameList.end()) {
-    return false;
-  }
-  const std::string path = _directory.fullpath(*_itFilename);
-
+bool ImageInput::updatePix() {
   pixDestroy(&_pPix);
   _pPix = nullptr;
-  _pPix = loadPix(_directory, *_itFilename);
-  _imgName = *_itFilename; 
+  _pPix = mat8ToPix(_img); 
+  return (_pPix != nullptr); 
+}; 
 
-  if(_pPix == nullptr) {
-    std::cout << "Failed to load " << *_itFilename << " as a Pix." << std::endl;
-    return false;
+  cv::Mat DirectoryInput::loadImage(const std::string &path) {
+    std::cout << "PDF.length" << std::string{"pdf"}.length() << std::endl;
+    if (path.find("pdf", (path.length() - 3)) != std::string::npos) {
+      return readPDFtoCV(path);
+    }
+    return cv::imread(path.c_str(), 0);
+  }
+
+  DirectoryInput::DirectoryInput(const Directory& directory) : _directory(directory) {
+    _filenameList = _directory.list();
+    _filenameList.sort();
+    _itFilename = _filenameList.begin();
+  }
+
+  cv::Mat DirectoryInput::loadImage(Directory &directory, const std::string &fileName) {
+    std::cout << "PDF.length " << std::string{"pdf"}.length() << std::endl;
+    //return loadImage(directory.fullpath(fileName)); 
+    if (directory.hasExtension(fileName.c_str(), "pdf")) {
+      return readPDFtoCV(directory.fullpath(fileName));
+    }
+    return cv::imread(directory.fullpath(fileName));
   }
 
 
-  // read time from file name
-  struct tm date;
-  memset(&date, 0, sizeof(date));
-  date.tm_year = atoi(_itFilename->substr(0, 4).c_str()) - 1900;
-  date.tm_mon = atoi(_itFilename->substr(4, 2).c_str()) - 1;
-  date.tm_mday = atoi(_itFilename->substr(6, 2).c_str());
-  date.tm_hour = atoi(_itFilename->substr(9, 2).c_str());
-  date.tm_min = atoi(_itFilename->substr(11, 2).c_str());
-  date.tm_sec = atoi(_itFilename->substr(13, 2).c_str());
-  _time = mktime(&date);
+  bool DirectoryInput::nextPix() {
+    if (_itFilename == _filenameList.end()) {
+      return false;
+    }
+    const std::string path = _directory.fullpath(*_itFilename);
 
-  std::cout << "Processing " << *_itFilename << " of " << ctime(&_time);
+    pixDestroy(&_pPix);
+    _pPix = nullptr;
+    _pPix = loadPix(_directory, *_itFilename);
+    _imgName = *_itFilename; 
 
-  _itFilename++;
-  return true;
-};
+    if(_pPix == nullptr) {
+      std::cout << "Failed to load " << *_itFilename << " as a Pix." << std::endl;
+      return false;
+    }
 
 
-bool DirectoryInput::nextImage() {
-  if (_itFilename == _filenameList.end()) {
-    return false;
-  }
-  const std::string path = _directory.fullpath(*_itFilename);
+    // read time from file name
+    struct tm date;
+    memset(&date, 0, sizeof(date));
+    date.tm_year = atoi(_itFilename->substr(0, 4).c_str()) - 1900;
+    date.tm_mon = atoi(_itFilename->substr(4, 2).c_str()) - 1;
+    date.tm_mday = atoi(_itFilename->substr(6, 2).c_str());
+    date.tm_hour = atoi(_itFilename->substr(9, 2).c_str());
+    date.tm_min = atoi(_itFilename->substr(11, 2).c_str());
+    date.tm_sec = atoi(_itFilename->substr(13, 2).c_str());
+    _time = mktime(&date);
 
-  _img = loadImage(_directory, *_itFilename);
-  _imgName = *_itFilename; 
-  if (_img.empty())
-    return false;
+    std::cout << "Processing " << *_itFilename << " of " << ctime(&_time);
+
+    _itFilename++;
+    return true;
+  };
+
+
+  bool DirectoryInput::nextImage() {
+    if (_itFilename == _filenameList.end()) {
+      return false;
+    }
+    const std::string path = _directory.fullpath(*_itFilename);
+
+    _img = loadImage(_directory, *_itFilename);
+    _imgName = *_itFilename; 
+    if (_img.empty())
+      return false;
 #if 0 // Resize cv::Mat
-  cv::resize(_img, _img, {0, 0}, 0.7, 0.7, CV_INTER_LANCZOS4); 
+    cv::resize(_img, _img, {0, 0}, 0.7, 0.7, CV_INTER_LANCZOS4); 
 #endif
 
 
 #if 1 // Load Pix
-  if(_pPix != nullptr) {
-    pixDestroy(&_pPix);
-    _pPix = nullptr;
-  }
+    if(_pPix != nullptr) {
+      pixDestroy(&_pPix);
+      _pPix = nullptr;
+    }
 
-  _pPix = loadPix(_directory, *_itFilename);
-  if(_pPix == nullptr) {
-    std::cout << "Failed to load " << *_itFilename << " as a Pix." << std::endl;
-    return false;
-  } else {
-    std::cout << "Successfully loaded " << *_itFilename << " as a Pix." << std::endl;
-  }
+    _pPix = loadPix(_directory, *_itFilename);
+    if(_pPix == nullptr) {
+      std::cout << "Failed to load " << *_itFilename << " as a Pix." << std::endl;
+      return false;
+    } else {
+      std::cout << "Successfully loaded " << *_itFilename << " as a Pix." << std::endl;
+    }
 
 #if 0// Resize Pix
-  pixResizeToMatch(_pPix, nullptr, _img.cols, _img.rows); 
+    pixResizeToMatch(_pPix, nullptr, _img.cols, _img.rows); 
 #endif
 
 #endif // End of Load Pix
 
 #if 0
-  // read time from file name
-  struct tm date;
-  memset(&date, 0, sizeof(date));
-  date.tm_year = atoi(_itFilename->substr(0, 4).c_str()) - 1900;
-  date.tm_mon = atoi(_itFilename->substr(4, 2).c_str()) - 1;
-  date.tm_mday = atoi(_itFilename->substr(6, 2).c_str());
-  date.tm_hour = atoi(_itFilename->substr(9, 2).c_str());
-  date.tm_min = atoi(_itFilename->substr(11, 2).c_str());
-  date.tm_sec = atoi(_itFilename->substr(13, 2).c_str());
-  _time = mktime(&date);
+    // read time from file name
+    struct tm date;
+    memset(&date, 0, sizeof(date));
+    date.tm_year = atoi(_itFilename->substr(0, 4).c_str()) - 1900;
+    date.tm_mon = atoi(_itFilename->substr(4, 2).c_str()) - 1;
+    date.tm_mday = atoi(_itFilename->substr(6, 2).c_str());
+    date.tm_hour = atoi(_itFilename->substr(9, 2).c_str());
+    date.tm_min = atoi(_itFilename->substr(11, 2).c_str());
+    date.tm_sec = atoi(_itFilename->substr(13, 2).c_str());
+    _time = mktime(&date);
 
-  std::cout << "Processing " << *_itFilename << " of " << ctime(&_time);
+    std::cout << "Processing " << *_itFilename << " of " << ctime(&_time);
 #endif
 
-  // save copy of image if requested
-  if (!_outDir.empty()) {
-    saveImage();
+    // save copy of image if requested
+    if (!_outDir.empty()) {
+      saveImage();
+    }
+
+    _itFilename++;
+    return true;
   }
 
-  _itFilename++;
-  return true;
-}
+  CameraInput::CameraInput(int device) {
+    _capture.open(device);
+  }
 
-CameraInput::CameraInput(int device) {
-  _capture.open(device);
-}
-
-bool CameraInput::nextImage() {
+  bool CameraInput::nextImage() {
   time(&_time);
   // read image from camera
   bool success = _capture.read(_img);

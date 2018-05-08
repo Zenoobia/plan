@@ -3,8 +3,39 @@
 
 namespace pl {
 
-ImGui_ImplGlfwGL3_Init(m_pGLFWwindow, true);
-ImGui_ImplGlfwGL3_Init(GLFWwindow , true);
+//ImGui_ImplGlfwGL3_Init(m_pGLFWwindow, true);
+//ImGui_ImplGlfwGL3_Init(GLFWwindow , true);
+
+struct ImGuiWrapper {
+  inline static void Init(GLFWwindow *window, bool val) {
+#ifdef USE_GL3
+    ImGui_ImplGlfwGL3_Init(window, val);
+#else
+    ImGui_ImplGlfwGL2_Init(window, val);
+#endif
+  } 
+  inline static void Shutdown() {
+#ifdef USE_GL3
+    ImGui_ImplGlfwGL3_Shutdown();
+#else
+    ImGui_ImplGlfwGL2_Shutdown();
+#endif
+  } 
+  inline static void NewFrame() {
+#ifdef USE_GL3
+    ImGui_ImplGlfwGL3_NewFrame(); 
+#else
+    ImGui_ImplGlfwGL2_NewFrame(); 
+#endif
+  }
+  inline static void RenderDrawData() {
+#ifdef USE_GL3
+    ImGui_ImplGlfwGL3_RenderDrawData(ImGui::GetDrawData());
+#else
+    ImGui_ImplGlfwGL2_RenderDrawData(ImGui::GetDrawData());
+#endif
+  } 
+};
 
 inline std::string Application::getFileExtension(const std::string &FileName) {
   if(FileName.find_last_of(".") != std::string::npos)
@@ -12,42 +43,42 @@ inline std::string Application::getFileExtension(const std::string &FileName) {
   return "";
 }
 
-static
-bool extractPatchFromOpenCVImage( cv::Mat& src, cv::Mat& dest, int x, int y, double angle, int width, int height) {
+  static
+  bool extractPatchFromOpenCVImage( cv::Mat& src, cv::Mat& dest, int x, int y, double angle, int width, int height) {
 
-  // Obtain The bounding box of the desired patch
-  cv::RotatedRect patchROI(cv::Point2i{x,y}, cv::Size2i(width,height), angle);
-  cv::Rect boundingRect = patchROI.boundingRect();
+    // Obtain The bounding box of the desired patch
+    cv::RotatedRect patchROI(cv::Point2i{x,y}, cv::Size2i(width,height), angle);
+    cv::Rect boundingRect = patchROI.boundingRect();
 
-  // check if the bounding box fits inside the image
-  if ( boundingRect.x >= 0 && boundingRect.y >= 0 &&
-       (boundingRect.x+boundingRect.width) < src.cols &&
-       (boundingRect.y+boundingRect.height) < src.rows ) {
+    // check if the bounding box fits inside the image
+    if ( boundingRect.x >= 0 && boundingRect.y >= 0 &&
+         (boundingRect.x+boundingRect.width) < src.cols &&
+         (boundingRect.y+boundingRect.height) < src.rows ) {
 
-    // crop out the bounding rectangle from the source image
-    cv::Mat preCropImg = src(boundingRect);
+      // crop out the bounding rectangle from the source image
+      cv::Mat preCropImg = src(boundingRect);
 
-    // the rotational center relative tot he pre-cropped image
-    int cropMidX, cropMidY;
-    cropMidX = boundingRect.width/2;
-    cropMidY = boundingRect.height/2;
+      // the rotational center relative tot he pre-cropped image
+      int cropMidX, cropMidY;
+      cropMidX = boundingRect.width/2;
+      cropMidY = boundingRect.height/2;
 
-    // obtain the affine transform that maps the patch ROI in the image to the
-    // dest patch image. The dest image will be an upright version.
-    cv::Mat map_mat = cv::getRotationMatrix2D(cv::Point2f(cropMidX, cropMidY), angle, 1.0f);
-    map_mat.at<double>(0,2) += static_cast<double>(width/2 - cropMidX);
-    map_mat.at<double>(1,2) += static_cast<double>(height/2 - cropMidY);
+      // obtain the affine transform that maps the patch ROI in the image to the
+      // dest patch image. The dest image will be an upright version.
+      cv::Mat map_mat = cv::getRotationMatrix2D(cv::Point2f(cropMidX, cropMidY), angle, 1.0f);
+      map_mat.at<double>(0,2) += static_cast<double>(width/2 - cropMidX);
+      map_mat.at<double>(1,2) += static_cast<double>(height/2 - cropMidY);
 
-    // rotate the pre-cropped image. The destination image will be
-    // allocated by warpAffine()
-    cv::warpAffine(preCropImg, dest, map_mat, cv::Size2i(width,height));
+      // rotate the pre-cropped image. The destination image will be
+      // allocated by warpAffine()
+      cv::warpAffine(preCropImg, dest, map_mat, cv::Size2i(width,height));
 
-    return true;
-  } // if
-  else {
-    return false;
-  } // else
-} // extract
+      return true;
+    } // if
+    else {
+      return false;
+    } // else
+  } // extract
 
 cv::Mat Application::readPDFtoCV(const std::string& filename,int DPI, const bool forceMono) {
   p_document* mypdf = p_document::load_from_file(filename);
@@ -118,7 +149,9 @@ void Application::initGLFW() {
   ImGuiIO& io = ImGui::GetIO(); (void)io;
   //io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;  // Enable Keyboard Controls
   //io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;   // Enable Gamepad Controls
-  ImGui_ImplGlfwGL3_Init(m_pGLFWwindow, true);
+  //ImGui_ImplGlfwGL3_Init(m_pGLFWwindow, true);
+  ImGuiWrapper::Init(m_pGLFWwindow, true);
+  
   ImGui::StyleColorsDark();
 
 };
@@ -132,12 +165,13 @@ Application::~Application() {
     glDeleteTextures(1, &m_ImageTex);
     glfwDestroyWindow(m_pGLFWwindow);
     glfwTerminate();
-    ImGui_ImplGlfwGL3_Shutdown();
+    ImGuiWrapper::Shutdown();
+    
   }
 };
 
-void Application::drawAllDocuments() {
 #if 0 // #Drawing loaded documents
+void Application::drawAllDocuments() {
   {
     m_entityManager.for_each<Document>
         (
@@ -170,8 +204,8 @@ void Application::drawAllDocuments() {
             });
 
   }
-#endif
 };
+#endif
 
 void Application::update() {
 
@@ -202,18 +236,15 @@ void Application::initDraw() {
   glClearColor(m_clearColor.x, m_clearColor.y, m_clearColor.z, m_clearColor.w);
   glClear(GL_COLOR_BUFFER_BIT);
 
-  ImGui_ImplGlfwGL3_NewFrame();
+  ImGuiWrapper::NewFrame();
 };
 
 void Application::draw() {
-  drawBrowsingWindow();
-  drawAllDocuments();
-
 };
 
 void Application::finishDraw() {
   ImGui::Render();
-  ImGui_ImplGlfwGL3_RenderDrawData(ImGui::GetDrawData());
+  ImGuiWrapper::RenderDrawData();
   glfwSwapBuffers(m_pGLFWwindow);
   //glfwPollEvents();
 };
@@ -235,6 +266,7 @@ static void drawSquares( Mat& image, const vector<vector<Point> >& squares )
   //imshow("datum", image);
 }
 
+#if 0  // Deprecated
 void Application::drawBrowsingWindow() {
   ImGui::Begin("Browsing Window");
   const bool browseButtonPressed = ImGui::Button("Browse for image");
@@ -254,6 +286,7 @@ void Application::drawBrowsingWindow() {
   }
   ImGui::End();
 };
+#endif
 
 // helper function:
 // finds a cosine of angle between vectors
@@ -719,7 +752,7 @@ inline
   //, ImVec2(0,0), ImVec2(1,1), ImColor(255,255,255,255), ImColor(255,255,255,128));
     };
     // Deprecated
-#if 1
+#if 0
     void Application::drawFrame(const cv::Mat& frame) {
 
       // Clear color and depth buffers

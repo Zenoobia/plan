@@ -4,7 +4,7 @@ cd src
 if [ "$1" == "win" ]; then
 	. ../configure --prefix=/mingw64
 else
-	. ../configure --prefix=/usr
+	. ../configure --prefix=/usr --enable-gl3=yes
 fi
 make -j6
 cd ..

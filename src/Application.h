@@ -17,7 +17,13 @@
 #include <memory>
 
 #include <imgui.h>
+
+#include "confdefs.h"
+#ifdef USE_GL3
 #include <imgui_impl_glfw_gl3.h>
+#else
+#include <imgui_impl_glfw_gl2.h>
+#endif
 #include <imguifilesystem.h>
 
 //#include <entityplus/entity.h>
