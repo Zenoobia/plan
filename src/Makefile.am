@@ -26,14 +26,19 @@ plan_CPPFLAGS = $(DEPS_CFLAGS) \
 
 # ImGui Library
 noinst_LTLIBRARIES = libImgui.la
-noinst_HEADERS = ../third_party/repos/imgui/imgui.h ../third_party/repos/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.h ../third_party/repos/imgui/examples/opengl2_example/imgui_impl_glfw_gl2.h
+noinst_HEADERS = ../third_party/repos/imgui/imgui.h
 libImgui_la_LDFLAGS = -static
 libImgui_la_SOURCES = ../third_party/repos/imgui/imgui.cpp \
  ../third_party/repos/imgui/imgui_draw.cpp \
- ../third_party/repos/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp \
  ../include/imguifilesystem.cpp
 
-#../third_party/repos/imgui/examples/opengl2_example/imgui_impl_glfw_gl2.cpp
+if GL3
+libImgui_la_SOURCES += ../third_party/repos/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp
+noinst_HEADERS += ../third_party/repos/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.h
+else
+libImgui_la_SOURCES += ../third_party/repos/imgui/examples/opengl2_example/imgui_impl_glfw_gl2.cpp
+noinst_HEADERS += ../third_party/repos/imgui/examples/opengl2_example/imgui_impl_glfw_gl2.h
+endif
 
 libImgui_la_CPPFLAGS = $(GL_CFLAGS) $(AM_CXXFLAGS)
 

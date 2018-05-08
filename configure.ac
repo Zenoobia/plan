@@ -21,6 +21,19 @@ esac],
 [debug=false])
 
 AM_CONDITIONAL(DEBUG, test x"$debug" = x"true")
+AC_DEFINE_UNQUOTED([DEBUG], [$debug])
+
+AC_ARG_ENABLE(gl3,
+AS_HELP_STRING([--enable-gl3], [enable opengl3, default: no]),
+[case "${enableval}" in
+      yes) gl3=true ;;
+      no)  gl3=false ;;
+      *)   AC_MSG_ERROR([bad value ${enableval} for --enable-gl3]) ;;
+esac],
+[gl3=false])
+
+AM_CONDITIONAL(GL3, test x"$gl3" = x"true")
+AC_DEFINE_UNQUOTED([GL3], [$gl3])
 
 # Checks for libraries.
 LT_INIT
@@ -35,6 +48,7 @@ AC_CHECK_LIB(opengl32, glPushMatrix, [], AC_MSG_ERROR([Could not find libGL. Try
 # Checks for header files.
 AC_CHECK_HEADERS([fcntl.h limits.h stdint.h string.h sys/time.h termios.h unistd.h])
 #AC_CHECK_HEADERS([argtable2.h], [], AC_MSG_ERROR([Could not find argtable2.h. Try $ ./configure CFLAGS='-Iyour-argtable2-include-path]))
+
 AC_CHECK_HEADERS([GLFW/glfw3.h], [], AC_MSG_ERROR([Could not find GLFW/glfw3.h. Try $ ./configure CFLAGS='-Iyour-GLFW-include-path]))
 
 # Finds Dependencies

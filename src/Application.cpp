@@ -3,6 +3,8 @@
 
 namespace pl {
 
+ImGui_ImplGlfwGL3_Init(m_pGLFWwindow, true);
+ImGui_ImplGlfwGL3_Init(GLFWwindow , true);
 
 inline std::string Application::getFileExtension(const std::string &FileName) {
   if(FileName.find_last_of(".") != std::string::npos)
