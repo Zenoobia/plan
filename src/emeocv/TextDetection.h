@@ -21,6 +21,16 @@ using util::lang::indices;
  */
 //bool operator<(cv::Rect const& a, cv::Rect const& b);
 
+/**
+ * Functor to help sorting rectangles by their x-position.
+ */
+class sortRectByX {
+ public:
+  bool operator()(cv::Rect const & a, cv::Rect const & b) const {
+    return a.x < b.x;
+  }
+};
+
 
 struct Symbol {
 

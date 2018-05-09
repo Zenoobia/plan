@@ -3,7 +3,13 @@
 
 TextDetection::TextDetection(Config const &config, ImageProcessor *pImageProcessor) : _config(config), _pImageProcessor(pImageProcessor) {
   _pTessApi = new tesseract::TessBaseAPI();
-  if(_pTessApi->Init("/usr/share/tessdata", "swe", tesseract::OEM_DEFAULT
+  // TODO: Find tessdata location in configure.ac
+  //#define TESSDATA_PREFIX "/usr/share"
+  //#define TESSDATA_PREFIX "/mingw64/share"
+#define TESSDATA_PREFIX "../data"
+#define TESSDATA_LANG "swe"
+
+  if(_pTessApi->Init(TESSDATA_PREFIX"/tessdata", TESSDATA_LANG, tesseract::OEM_DEFAULT
                      )) {
     fprintf(stderr, "Could not initialize tesseract.\n");
   }
@@ -149,10 +155,11 @@ void TextDetection::process(bool const loadCached) {
 
     for(auto const &rect : digitRects) {
       _vTextLines.emplace_back(rect);
+      //cv::rectangle(_pImageInput->getImage(), rect, cv::Scalar(255));
+      //cv::rectangle(_img, rect, cv::Scalar(255));
     }
 
-    //_vTextLines.clear();
-    //_vTextLines.emplace_back(cv::Rect{1, 1, 1000, 1000});
+
 
     // After filling with potential Rects
     for(auto &textLine : _vTextLines) {
@@ -270,7 +277,57 @@ Rects TextDetection::findAlignedBoxes(Rects::const_iterator begin,
   }
   return result;
 }
-#if 0
+
+std::vector<cv::Rect> TextDetection::findCounterDigits(const cv::Mat &cImg, const int xOffset, const int yOffset) {
+#if 1
+      cv::Mat edges = _pImageProcessor->cannyEdges(cImg);
+
+      cv::Mat img_ret = edges.clone();
+
+      // find contours in whole image
+      Contours contours, filteredContours;
+      Rects boundingBoxes;
+      cv::findContours(edges, contours,
+                       CV_RETR_LIST// CV_RETR_{EXTERNAL,LIST}
+                       , CV_CHAIN_APPROX_NONE);
+
+      // filter contours by bounding rect size
+      _pImageProcessor->filterContours(contours, boundingBoxes, filteredContours);
+
+      //  std::cout << "number of filtered contours: " << filteredContours.size();
+
+#if 0 // find bounding boxes that are aligned at y position //TODO: Not working
+      Rects  alignedBoundingBoxes, tmpRes;
+      for (Rects::const_iterator ib = boundingBoxes.begin(); ib != boundingBoxes.end(); ++ib) {
+        tmpRes.clear();
+        tmpRes = findAlignedBoxes(ib, boundingBoxes.end());
+        if (tmpRes.size() > alignedBoundingBoxes.size()) {
+          alignedBoundingBoxes = tmpRes;
+        }
+      }
+#else
+  Rects alignedBoundingBoxes = boundingBoxes;
+#endif
+  //std::cout << "max number of alignedBoxes: " << alignedBoundingBoxes.size();
+
+  // sort bounding boxes from left to right
+  std::sort(alignedBoundingBoxes.begin(), alignedBoundingBoxes.end(), sortRectByX());
+
+#if 0 // Not working
+  // draw contours
+  //cv::Mat cont = cv::Mat::zeros(edges.rows, edges.cols, CV_8UC1);
+  // cv::drawContours(_img, cont, 1, cv::Scalar(255));
+  //_img = cont; 
+
+  cv::drawContours(_img, contours, 2, cv::Scalar(255));
+#endif
+
+  return alignedBoundingBoxes;
+#endif
+}
+
+
+#if 0 // Deprecated
 /**
  * Find and isolate the digits of the counter,
  */
@@ -340,61 +397,4 @@ for (int i = 0; i < alignedBoundingBoxes.size(); ++i) {
   }
 }
 #endif
-
-/**
- * Functor to help sorting rectangles by their x-position.
- */
-class sortRectByX {
- public:
-  bool operator()(cv::Rect const & a, cv::Rect const & b) const {
-    return a.x < b.x;
-  }
-};
-
-std::vector<cv::Rect> TextDetection::findCounterDigits(const cv::Mat &cImg, const int xOffset, const int yOffset) {
-#if 1
-      cv::Mat edges = _pImageProcessor->cannyEdges(cImg);
-
-      cv::Mat img_ret = edges.clone();
-
-      // find contours in whole image
-      Contours contours, filteredContours;
-      Rects boundingBoxes;
-      cv::findContours(edges, contours,
-                       CV_RETR_LIST// CV_RETR_EXTERNAL
-                       , CV_CHAIN_APPROX_NONE);
-
-      // filter contours by bounding rect size
-      _pImageProcessor->filterContours(contours, boundingBoxes, filteredContours);
-
-      //  std::cout << "number of filtered contours: " << filteredContours.size();
-
-#if 0 // find bounding boxes that are aligned at y position
-      Rects  alignedBoundingBoxes, tmpRes;
-      for (Rects::const_iterator ib = boundingBoxes.begin(); ib != boundingBoxes.end(); ++ib) {
-        tmpRes.clear();
-        tmpRes = findAlignedBoxes(ib, boundingBoxes.end());
-        if (tmpRes.size() > alignedBoundingBoxes.size()) {
-          alignedBoundingBoxes = tmpRes;
-        }
-      }
-#else
-  Rects alignedBoundingBoxes = boundingBoxes;
-#endif
-  //std::cout << "max number of alignedBoxes: " << alignedBoundingBoxes.size();
-
-  // sort bounding boxes from left to right
-  std::sort(alignedBoundingBoxes.begin(), alignedBoundingBoxes.end(), sortRectByX());
-
-#if 0 // Not working
-  // draw contours
-  cv::Mat cont = cv::Mat::zeros(edges.rows, edges.cols, CV_8UC1);
-  cv::drawContours(_img, cont, -1, cv::Scalar(255));
-  //_img = cont; 
-  //cv::drawContours(_img, contours, -1, cv::Scalar(255));
-#endif
-
-  return alignedBoundingBoxes;
-#endif
-}
 

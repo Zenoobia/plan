@@ -49,8 +49,11 @@ AC_PROG_LIBTOOL(libtool)
 
 AC_CHECK_LIB(glfw, glfwInit, [], AC_MSG_ERROR([Could not find libglfw. Try $ ./configure LDFLAGS='-Lyour-glfw-lib-path']))
 
-AC_CHECK_LIB(GL, glPushMatrix, [], AC_MSG_ERROR([Could not find libGL. Try $ ./configure LDFLAGS='-Lyour-GL-lib-path']))
-#AC_CHECK_LIB(opengl32, glPushMatrix, [], AC_MSG_ERROR([Could not find libopengl32. Try $ ./configure LDFLAGS='-Lyour-opengl32-lib-path']))
+# Find Unix -lgl
+#AC_CHECK_LIB(GL, glPushMatrix, [], AC_MSG_ERROR([Could not find libGL. Try $ ./configure LDFLAGS='-Lyour-GL-lib-path']))
+
+# Find Windows -lopengl32
+AC_CHECK_LIB(opengl32, glPushMatrix, [], AC_MSG_ERROR([Could not find libopengl32. Try $ ./configure LDFLAGS='-Lyour-opengl32-lib-path']))
 
 # Checks for header files.
 AC_CHECK_HEADERS([fcntl.h limits.h stdint.h string.h sys/time.h termios.h unistd.h])

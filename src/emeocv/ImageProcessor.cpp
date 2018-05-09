@@ -12,16 +12,6 @@
 #include "ImageProcessor.h"
 #include "Config.h"
 
-/**
- * Functor to help sorting rectangles by their x-position.
- */
-class sortRectByX {
-public:
-    bool operator()(cv::Rect const & a, cv::Rect const & b) const {
-        return a.x < b.x;
-    }
-};
-
 ImageProcessor::ImageProcessor(const Config & config) :
         _config(config), _debugWindow(false), _debugSkew(false), _debugDigits(false), _debugEdges(false) {
 }

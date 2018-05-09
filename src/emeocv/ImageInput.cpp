@@ -103,6 +103,7 @@ bool ImageInput::updatePix() {
   }
 
 
+#if 0 // Deprecated
   bool DirectoryInput::nextPix() {
     if (_itFilename == _filenameList.end()) {
       return false;
@@ -136,7 +137,7 @@ bool ImageInput::updatePix() {
     _itFilename++;
     return true;
   };
-
+#endif
 
   bool DirectoryInput::nextImage() {
     if (_itFilename == _filenameList.end()) {
@@ -153,7 +154,7 @@ bool ImageInput::updatePix() {
 #endif
 
 
-#if 1 // Load Pix
+#if 0 // Load Pix
     if(_pPix != nullptr) {
       pixDestroy(&_pPix);
       _pPix = nullptr;

@@ -7,7 +7,6 @@
 #define PACKAGE_URL ""
 #define PACKAGE "plan"
 #define VERSION "1.0"
-#define USE_GL3 "true"
 #define STDC_HEADERS 1
 #define HAVE_SYS_TYPES_H 1
 #define HAVE_SYS_STAT_H 1
@@ -18,16 +17,14 @@
 #define HAVE_INTTYPES_H 1
 #define HAVE_STDINT_H 1
 #define HAVE_UNISTD_H 1
-#define HAVE_DLFCN_H 1
 #define LT_OBJDIR ".libs/"
 #define HAVE_LIBGLFW 1
-#define HAVE_LIBGL 1
+#define HAVE_LIBOPENGL32 1
 #define HAVE_FCNTL_H 1
 #define HAVE_LIMITS_H 1
 #define HAVE_STDINT_H 1
 #define HAVE_STRING_H 1
 #define HAVE_SYS_TIME_H 1
-#define HAVE_TERMIOS_H 1
 #define HAVE_UNISTD_H 1
 #define HAVE_GLFW_GLFW3_H 1
 #define HAVE__BOOL 1

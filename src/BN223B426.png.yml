@@ -11,26 +11,6 @@ TextLines:
       Symbols:
          []
    -
-      number_of_symbols: 1
-      Symbols:
-         -
-            number_of_chars: 1
-            Characters:
-               -
-                  characters: 46
-                  confidence: 9.0555694580078125e+01
-                  rects: [ 296, 3137, 4, 28 ]
-   -
-      number_of_symbols: 1
-      Symbols:
-         -
-            number_of_chars: 1
-            Characters:
-               -
-                  characters: 46
-                  confidence: 9.0555694580078125e+01
-                  rects: [ 296, 3137, 4, 28 ]
-   -
       number_of_symbols: 0
       Symbols:
          []
@@ -58,264 +38,6 @@ TextLines:
       number_of_symbols: 0
       Symbols:
          []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 1
-      Symbols:
-         -
-            number_of_chars: 1
-            Characters:
-               -
-                  characters: 50
-                  confidence: 9.4730262756347656e+01
-                  rects: [ 950, 3150, 25, 29 ]
-   -
-      number_of_symbols: 1
-      Symbols:
-         -
-            number_of_chars: 1
-            Characters:
-               -
-                  characters: 50
-                  confidence: 9.4730262756347656e+01
-                  rects: [ 950, 3150, 25, 29 ]
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 1
-      Symbols:
-         -
-            number_of_chars: 1
-            Characters:
-               -
-                  characters: -61
-                  confidence: 9.4114807128906250e+01
-                  rects: [ 1370, 3152, 19, 14 ]
-   -
-      number_of_symbols: 1
-      Symbols:
-         -
-            number_of_chars: 1
-            Characters:
-               -
-                  characters: -61
-                  confidence: 9.4114807128906250e+01
-                  rects: [ 1370, 3152, 19, 14 ]
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 1
-      Symbols:
-         -
-            number_of_chars: 1
-            Characters:
-               -
-                  characters: 67
-                  confidence: 9.9240509033203125e+01
-                  rects: [ 1659, 3132, 9, 15 ]
-   -
-      number_of_symbols: 1
-      Symbols:
-         -
-            number_of_chars: 1
-            Characters:
-               -
-                  characters: 114
-                  confidence: 9.7934051513671875e+01
-                  rects: [ 1659, 1587, 11, 13 ]
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 1
-      Symbols:
-         -
-            number_of_chars: 1
-            Characters:
-               -
-                  characters: 62
-                  confidence: 9.4760154724121094e+01
-                  rects: [ 1891, 3124, 23, 24 ]
-   -
-      number_of_symbols: 1
-      Symbols:
-         -
-            number_of_chars: 1
-            Characters:
-               -
-                  characters: 62
-                  confidence: 9.4760154724121094e+01
-                  rects: [ 1891, 3124, 23, 24 ]
-   -
-      number_of_symbols: 1
-      Symbols:
-         -
-            number_of_chars: 1
-            Characters:
-               -
-                  characters: 46
-                  confidence: 9.4768630981445312e+01
-                  rects: [ 1916, 3133, 4, 7 ]
    -
       number_of_symbols: 0
       Symbols:
@@ -387,440 +109,16 @@ TextLines:
             number_of_chars: 1
             Characters:
                -
-                  characters: -30
-                  confidence: 9.8025428771972656e+01
-                  rects: [ 2079, 3136, 11, 11 ]
+                  characters: 58
+                  confidence: 9.1541732788085938e+001
+                  rects: [ 950, 3156, 20, 23 ]
          -
             number_of_chars: 1
             Characters:
                -
-                  characters: 50
-                  confidence: 9.3919670104980469e+01
-                  rects: [ 2090, 3136, 18, 11 ]
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 1
-      Symbols:
-         -
-            number_of_chars: 1
-            Characters:
-               -
-                  characters: -30
-                  confidence: 9.2034721374511719e+01
-                  rects: [ 2765, 1424, 14, 11 ]
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 1
-      Symbols:
-         -
-            number_of_chars: 1
-            Characters:
-               -
-                  characters: 47
-                  confidence: 9.2251068115234375e+01
-                  rects: [ 2798, 1424, 12, 8 ]
-   -
-      number_of_symbols: 1
-      Symbols:
-         -
-            number_of_chars: 1
-            Characters:
-               -
-                  characters: -30
-                  confidence: 9.6532905578613281e+01
-                  rects: [ 2812, 1424, 8, 8 ]
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 1
-      Symbols:
-         -
-            number_of_chars: 1
-            Characters:
-               -
-                  characters: 70
-                  confidence: 9.5054695129394531e+01
-                  rects: [ 3364, 933, 11, 18 ]
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 1
-      Symbols:
-         -
-            number_of_chars: 1
-            Characters:
-               -
-                  characters: 61
-                  confidence: 9.3873550415039062e+01
-                  rects: [ 3369, 1102, 11, 9 ]
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 1
-      Symbols:
-         -
-            number_of_chars: 1
-            Characters:
-               -
-                  characters: 61
-                  confidence: 9.7433563232421875e+01
-                  rects: [ 3429, 1101, 13, 12 ]
-   -
-      number_of_symbols: 1
-      Symbols:
-         -
-            number_of_chars: 1
-            Characters:
-               -
-                  characters: 61
-                  confidence: 9.7433563232421875e+01
-                  rects: [ 3429, 1101, 13, 12 ]
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 0
-      Symbols:
-         []
-   -
-      number_of_symbols: 1
-      Symbols:
-         -
-            number_of_chars: 1
-            Characters:
-               -
-                  characters: 114
-                  confidence: 9.0523284912109375e+01
-                  rects: [ 3507, 1828, 25, 13 ]
+                  characters: 105
+                  confidence: 9.2188735961914062e+001
+                  rects: [ 967, 3150, 8, 29 ]
    -
       number_of_symbols: 2
       Symbols:
@@ -828,16 +126,60 @@ TextLines:
             number_of_chars: 1
             Characters:
                -
-                  characters: 114
-                  confidence: 9.3484687805175781e+01
-                  rects: [ 3511, 1828, 12, 13 ]
+                  characters: 58
+                  confidence: 9.1541732788085938e+001
+                  rects: [ 950, 3156, 20, 23 ]
          -
             number_of_chars: 1
             Characters:
                -
-                  characters: 46
-                  confidence: 9.0831825256347656e+01
-                  rects: [ 3523, 1828, 9, 13 ]
+                  characters: 105
+                  confidence: 9.2188735961914062e+001
+                  rects: [ 967, 3150, 8, 29 ]
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
    -
       number_of_symbols: 0
       Symbols:
@@ -873,9 +215,566 @@ TextLines:
             number_of_chars: 1
             Characters:
                -
-                  characters: 97
-                  confidence: 9.8055435180664062e+01
-                  rects: [ 3594, 1099, 24, 13 ]
+                  characters: 108
+                  confidence: 9.6891059875488281e+001
+                  rects: [ 1659, 1587, 7, 13 ]
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 2
+      Symbols:
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 73
+                  confidence: 9.8712287902832031e+001
+                  rects: [ 3364, 933, 7, 18 ]
+         -
+            number_of_chars: 1
+            Characters:
+               -
+                  characters: 39
+                  confidence: 9.0007934570312500e+001
+                  rects: [ 3368, 933, 4, 9 ]
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
+   -
+      number_of_symbols: 0
+      Symbols:
+         []
    -
       number_of_symbols: 0
       Symbols:

@@ -47,6 +47,7 @@ cv::Mat pix8ToMat(Pix *pix8) // Used in createLabels
   return mat;
 }
 
+# if 0 // Deprecated
 static void createLabels(ImageInput *pImageInput) {
   auto *api = new tesseract::TessBaseAPI();
 
@@ -160,7 +161,7 @@ static void createLabels(ImageInput *pImageInput) {
 pixDestroy(&pPix);
   api->End();
 };
-
+#endif
 
 static void testImages(ImageInput *pImageInput) {
   Config config;

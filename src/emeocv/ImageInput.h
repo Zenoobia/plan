@@ -30,7 +30,7 @@ public:
   virtual void saveImage(cv::Mat &img, const std::string &fileName) const;
 
 public:
-  virtual bool nextPix() = 0;
+  //virtual bool nextPix() = 0;
   Pix* getPix() const;
   static Pix* loadPix(Directory &directory, const std::string &fileName);
   virtual bool updatePix(); 
@@ -47,7 +47,7 @@ public:
   DirectoryInput(const Directory & directory);
 
   virtual bool nextImage();
-  virtual bool nextPix();
+  //virtual bool nextPix();
 
   static cv::Mat loadImage(Directory &directory, const std::string &fileName);
   static cv::Mat loadImage(const std::string &path);

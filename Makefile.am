@@ -2,8 +2,11 @@ AUTOMAKE_OPTIONS = foreign subdir-objects
 ACLOCAL_AMFLAGS = -I m4
 AM_CXXFLAGS = -std=c++17 -fpic -Wall -Wextra -Werror -x c++ -isystem /usr/local/include -isystem /usr/include
 
+# Windows
+AM_LDFLAGS = -lopengl32
+
 if DEBUG
-AM_CXXFLAGS +=-g3 -O0
+AM_CXXFLAGS +=-g3 -O0 -ggdb
 else
 AM_CXXFLAGS += -O2
 endif
