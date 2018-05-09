@@ -1,3 +1,4 @@
-make -k -j4 && ./plan
+make -k -j4 && \
+	xiwi ./plan
 
 

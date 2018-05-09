@@ -95,7 +95,6 @@ bool TextDetection::loadData() noexcept {
           _vTextLines[textLine].vSymbols[symbolIndex].vDetectedRects.emplace_back(rect);
 
 
-
           std::cout << "Character: " << (char)(int)charItem["characters"] << std::endl;
           _vTextLines[textLine].vSymbols[symbolIndex].vDetectedChars.emplace_back((char)(int)charItem["characters"]);
           _vTextLines[textLine].vSymbols[symbolIndex].vConfidence.emplace_back((float)charItem["confidence"]);

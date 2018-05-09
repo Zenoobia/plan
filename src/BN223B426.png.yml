@@ -110,14 +110,14 @@ TextLines:
             Characters:
                -
                   characters: 58
-                  confidence: 9.1541732788085938e+001
+                  confidence: 9.1541732788085938e+01
                   rects: [ 950, 3156, 20, 23 ]
          -
             number_of_chars: 1
             Characters:
                -
                   characters: 105
-                  confidence: 9.2188735961914062e+001
+                  confidence: 9.2188735961914062e+01
                   rects: [ 967, 3150, 8, 29 ]
    -
       number_of_symbols: 2
@@ -127,14 +127,14 @@ TextLines:
             Characters:
                -
                   characters: 58
-                  confidence: 9.1541732788085938e+001
+                  confidence: 9.1541732788085938e+01
                   rects: [ 950, 3156, 20, 23 ]
          -
             number_of_chars: 1
             Characters:
                -
                   characters: 105
-                  confidence: 9.2188735961914062e+001
+                  confidence: 9.2188735961914062e+01
                   rects: [ 967, 3150, 8, 29 ]
    -
       number_of_symbols: 0
@@ -216,7 +216,7 @@ TextLines:
             Characters:
                -
                   characters: 108
-                  confidence: 9.6891059875488281e+001
+                  confidence: 9.6891059875488281e+01
                   rects: [ 1659, 1587, 7, 13 ]
    -
       number_of_symbols: 0
@@ -674,14 +674,14 @@ TextLines:
             Characters:
                -
                   characters: 73
-                  confidence: 9.8712287902832031e+001
+                  confidence: 9.8712287902832031e+01
                   rects: [ 3364, 933, 7, 18 ]
          -
             number_of_chars: 1
             Characters:
                -
                   characters: 39
-                  confidence: 9.0007934570312500e+001
+                  confidence: 9.0007934570312500e+01
                   rects: [ 3368, 933, 4, 9 ]
    -
       number_of_symbols: 0

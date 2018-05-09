@@ -442,7 +442,7 @@ class App : public pl::Application {
         ocr.saveTrainingData();
         textDetection.saveData();
       } else if(ImGui::IsKeyPressed('X')) {
-        glfwSetWindowShouldClose(m_pGLFWwindow, GLFW_TRUE);
+        glfwSetWindowShouldClose(m_pGLFWwindow, GL_TRUE);
         break;
       } else if (ImGui::IsKeyPressed('L') && pImageInput->nextImage()) {
         imgProcessor.setInput(img);

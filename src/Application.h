@@ -18,7 +18,7 @@
 
 #include <imgui.h>
 
-#include "confdefs.h"
+#include "config.h"
 #ifdef USE_GL3
 #include <imgui_impl_glfw_gl3.h>
 #else
